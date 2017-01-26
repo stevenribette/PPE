@@ -26,7 +26,7 @@
     else if(isset($_GET['personnel'])){
         personnel();
     }
-    else if(isset($_GET['fournisseur'])){
+    else if(isset($_GET['fournisseurs'])){
         fournisseur();
     }else{
     ?>

@@ -23,8 +23,8 @@ function navbar(){
                             <li><a href="modclient.php">Modifier</a></li>
                         </ul>
                 </li>
-                <li><a href="#personnel.php">Personnel</a></li>
-                <li><a href="#fournisseurs.php">Fournisseurs</a></li>
+                <li><a href="?personnel">Personnel</a></li>
+                <li><a href="?fournisseurs">Fournisseurs</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
