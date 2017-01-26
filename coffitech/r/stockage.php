@@ -3,7 +3,7 @@ function stockage ()
 {
     ?>
     <div class="container">
-        <table class="table table-striped" id="liste">
+        <table class="table table-striped">
             <thead>
             <tr>
                 <th>Code</th>
@@ -152,10 +152,12 @@ function stockage ()
                         mysqli_free_result($result);
                         $code = $code[0];
                         $code++;
-                        echo $code;
                         $sql = 'INSERT INTO '.$vertype.' set '.$debut.'_libelle = "'. $verlibelle. '", '.$debut.'_code = "'.strtoupper($debut).$code.'", etat = "'. $_POST['post_etat']. '"';
                         mysqli_query($db, $sql);
-                        echo $sql;
+                        print('<meta http-equiv="refresh" content="1;URL=gestion.php?stockage">');
+                        print('<div class="alert alert-success">
+                              <strong>Success!</strong> Nouvel élélement ajouter à la base
+                                </div>');
                     }
                     else
                     {
@@ -175,6 +177,7 @@ function stockage ()
             <button type="submit" class="btn btn-primary">Ajouter</button>
         </form>
     </div>
+    </br>
     <?php
 }
 ?>

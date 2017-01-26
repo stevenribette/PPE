@@ -8,7 +8,7 @@ function navbar(){
         }
 
     ?>
-    <nav class="navbar navbar-default navbar-relative-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header" id="navbar">
                 <a class="navbar-brand" href="gestion.php">Coffitech Gestion</a>
@@ -18,7 +18,7 @@ function navbar(){
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Stockage
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="gestion.php?stockage#liste">Liste</a></li>
+                        <li><a href="gestion.php?stockage">Liste</a></li>
                         <li><a href="gestion.php?stockage#ajouter">Ajouter</a></li>
                         <li><a href="gestion.php?stockage#setup">Setup</a></li>
                     </ul>
@@ -36,6 +36,9 @@ function navbar(){
             </ul>
         </div>
     </nav>
+    </br>
+    </br>
+    </br>
 	
 <?php
 }
