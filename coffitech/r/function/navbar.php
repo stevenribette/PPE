@@ -14,15 +14,16 @@ function navbar(){
                 <a class="navbar-brand" href="gestion.php">Coffitech Gestion</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="gestion.php?stockage">Stockage</a></li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown">Client
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Stockage
                         <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="newclient.php">Ajouter</a></li>
-                            <li><a href="modclient.php">Modifier</a></li>
-                        </ul>
+                    <ul class="dropdown-menu">
+                        <li><a href="gestion.php?stockage#liste">Liste</a></li>
+                        <li><a href="gestion.php?stockage#ajouter">Ajouter</a></li>
+                        <li><a href="gestion.php?stockage#setup">Setup</a></li>
+                    </ul>
                 </li>
+                <li><a href="gestion.php?client">Client</a></li>
                 <li><a href="?personnel">Personnel</a></li>
                 <li><a href="?fournisseurs">Fournisseurs</a></li>
             </ul>

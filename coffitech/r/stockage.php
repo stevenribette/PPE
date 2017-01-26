@@ -3,7 +3,7 @@ function stockage ()
 {
     ?>
     <div class="container">
-        <table class="table table-striped">
+        <table class="table table-striped" id="liste">
             <thead>
             <tr>
                 <th>Code</th>
@@ -102,6 +102,78 @@ function stockage ()
             ?>
             </tbody>
         </table>
+        <form method="post" id="ajouter">
+            <div class="form-group">
+                <label>Type</label>
+                <select class="form-control" name="post_type">
+                    <option>ordinateur</option>
+                    <option>souris</option>
+                    <option>clavier</option>
+                    <option>ecran</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Libelle</label>
+                <input type="text" name="post_libelle" class="form-control" placeholder="Entrer le libelle">
+            </div>
+            <div class="form-group">
+                <label>Etat</label>
+                <select class="form-control" name="post_etat">
+                    <option>disponible</option>
+                    <option>utiliser</option>
+                </select>
+            </div>
+            <?php
+            require('connect.php');
+            if (count($_POST) > 0){
+                if(!empty($_POST['post_libelle'])){
+                    if($_POST['post_type'] == "ordinateur"){
+                        $debut = "ord";
+                    }else if($_POST['post_type'] == "souris"){
+                        $debut = "sou";
+                    } else if($_POST['post_type'] == "clavier"){
+                        $debut = "cla";
+                    } else if($_POST['post_type'] == "ecran"){
+                        $debut = "ecran";
+                    }
+                    $verlibelle = $_POST['post_libelle'];
+                    $vertype = $_POST['post_type'];
+                    $req = 'SELECT '.$debut.'_libelle FROM '.$vertype.' WHERE '.$debut.'_libelle = "'.$verlibelle.'"';
+                    $res = mysqli_query($db, $req);
+                    $donnee = mysqli_fetch_array($res);
+                    //libération des ressources
+                    mysqli_free_result($res);
+                    if($donnee[$debut.'_libelle']=='')
+                    {
+                        $req = 'SELECT MAX('.$debut.'_id) FROM '.$vertype.'';
+                        $result = mysqli_query($db, $req);
+                        $code = mysqli_fetch_array($result);
+                        //libération des ressources
+                        mysqli_free_result($result);
+                        $code = $code[0];
+                        $code++;
+                        echo $code;
+                        $sql = 'INSERT INTO '.$vertype.' set '.$debut.'_libelle = "'. $verlibelle. '", '.$debut.'_code = "'.strtoupper($debut).$code.'", etat = "'. $_POST['post_etat']. '"';
+                        mysqli_query($db, $sql);
+                        echo $sql;
+                    }
+                    else
+                    {
+                        print('<div class="alert alert-danger">
+                            <strong>Danger!</strong> Le libelle que vous avez indiquez existe déjà
+                            </div>');
+                    }
+                } else {
+                    print('<div class="alert alert-danger">
+                            <strong>Danger!</strong> Vous n\'avez pas indiquez le libelle
+                            </div>');
+                }
+                //fermer la connexion
+                mysqli_close($db);
+            }
+            ?>
+            <button type="submit" class="btn btn-primary">Ajouter</button>
+        </form>
     </div>
     <?php
 }

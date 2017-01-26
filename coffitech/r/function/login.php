@@ -2,7 +2,7 @@
 function login()
             {
                 $page = $_SERVER['PHP_SELF'];
-                if ($page == '/coffitech/index.php') {
+                if ($page == '/PPE/coffitech/index.php') {
                     require("r/connect.php");
                 } else {
                     require("connect.php");
@@ -19,7 +19,7 @@ function login()
                 if (!(isset($_SESSION['login'])) && count($_POST) == 0) {
                     $status = 0;
                     $_SESSION['on'] = "false";
-                    if ($page == '/coffitech/r/gestion.php') {
+                    if ($page == '/PPE/coffitech/r/gestion.php') {
                         print('<meta http-equiv="refresh" content="0;URL=../index.php">');
                     }
                 } else if (!(isset($_SESSION['login'])) && isset($_POST['login'])) {
@@ -27,7 +27,7 @@ function login()
                     while ($Row = mysqli_fetch_array($Resul)) {
                         if ($Row[1] == $_POST['pseudo'] && $Row[2] == $_POST['password']) {
                             $_SESSION['login'] = $Row[0];
-                            if ($page == '/coffitech/index.php') {
+                            if ($page == '/PPE/coffitech/index.php') {
                                 print('<meta http-equiv="refresh" content="0;URL=r/gestion.php">');
                             }
                         }
@@ -43,12 +43,12 @@ function login()
                         $Nom = $Row[1];
                         //$_SESSION['Level'] = $Row['level_user'];
                     }
-                    if ($page == '/coffitech/index.php') {
+                    if ($page == '/PPE/coffitech/index.php') {
                         print('<meta http-equiv="refresh" content="0;URL=r/gestion.php">');
                     }
                 }
                 print('<div id="login" >');
-                if ($status == 0 && $page == '/coffitech/index.php') {
+                if ($status == 0 && $page == '/PPE/coffitech/index.php') {
                     print('<form method="POST" >');
                     print('<input type="hidden" name="login" value="true" />');
                     print('<p>Identifiant :<input type="text" name="pseudo" /></p>');
@@ -58,7 +58,7 @@ function login()
                     print('</form>');
 
                 } else if ($status == 1) {
-                    if ($page == '/coffitech/index.php') {
+                    if ($page == '/PPE/coffitech/index.php') {
                         print('<div id="loginOn" >');
                         print('Bonjours ' . $Nom . '');
                         print('<br />');
