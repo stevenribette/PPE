@@ -1,0 +1,19 @@
+<div [class]="theme ? 'dark-theme' : 'user-theme'">
+<md-toolbar color="primary" class="app-toolbar">
+  <button md-icon-button (click)="sidenav.toggle()">
+    <md-icon>menu</md-icon>
+  </button> Coffitech Gestion
+  <span class="app-fill-remaining-space"></span>
+  <button (click)="onThemeClicked()" md-button>Theme</button>
+</md-toolbar>
+<md-sidenav-layout>
+  <md-sidenav #sidenav mode="side" opened>
+    <div class="app-belowtoolbar">
+      <pr-main-sidenav></pr-main-sidenav>
+    </div>
+  </md-sidenav>
+  <div class="app-belowtoolbar">
+    <router-outlet></router-outlet>
+  </div>
+</md-sidenav-layout>
+</div>

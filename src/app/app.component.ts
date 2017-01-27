@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MdSnackBar } from '@angular/material';
 
 @Component({
   selector: 'pr-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pr works!';
+  title = 'Coffitech Gestion';
 }
