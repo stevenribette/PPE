@@ -19,7 +19,7 @@ function navbar(){
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="gestion.php?stockage#lelement">Liste des élément</a></li>
-                        <li><a href="gestion.php?stockage#nelement">Ajouter un élément</a></li>
+                        <li><a href="gestion.php?stockage#nelement" data-target="#Monnsetup" data-toggle="collapse.show">Ajouter un élément</a></li>
                         <li><a href="gestion.php?stockage#lsetup">Liste des setup</a></li>
                         <li><a href="gestion.php?stockage#nsetup">Ajouter un setup</a></li>
                     </ul>

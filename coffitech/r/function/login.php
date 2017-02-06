@@ -53,7 +53,7 @@ function login()
                     print('<input type="hidden" name="login" value="true" />');
                     print('<p>Identifiant :<input type="text" name="pseudo" /></p>');
                     print('<p>Mot de passe :<input type="password" name="password" /></p>');
-                    print('<p><button type="submit" value="Se Connecter" class="glyphicon glyphicon-log-in"></button></p>');
+                    print('<p><button type="submit" value="Se Connecter" class="glyphicon glyphicon-log-in btn btn-primary btn-block"></button></p>');
                     print($MesErreur);
                     print('</form>');
 
@@ -67,7 +67,7 @@ function login()
 
                     print('<form method="POST" class="form-inline" >');
                     print('<input type="hidden" name="logout" value="true" />');
-                    print('<button type="submit" value="D�connecter" class="glyphicon glyphicon-log-out"></button>');
+                    print('<button type="submit" value="D�connecter" class="glyphicon glyphicon-log-out btn btn-primary btn-block"></button>');
                     print('</form>');
                     print('</div>');
                 }

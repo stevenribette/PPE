@@ -3,7 +3,7 @@ function stockage (){
     listeelement();
     nelement();
     listesetup();
-    nsetup();
+        nsetup();
 }
 function listeelement()
 {
@@ -174,7 +174,13 @@ function listeelement()
 }
 
 function nelement(){
-    ?>
+    ?><!-- les boutons d'actions -->
+    <button class="btn btn-primary" type="button" data-target="#Monnelement" data-toggle="collapse" aria-expanded="false" aria-controls="MonCollapse">Ajouter un élèment</button>
+
+    <!-- le contenu masqué -->
+
+    <section id="Monnelement" class="collapse">
+    </br>
     <form method="post" id="nelement" class="form-inline">
         <div class="form-group">
             <label class="sr-only">Type</label>
@@ -189,6 +195,7 @@ function nelement(){
             <label class="sr-only mb-2 mr-sm-2 mb-sm-0">Libelle</label>
             <input type="text" name="post_libelle" class="form-control" placeholder="Entrer la designation">
         </div>
+        <button name="nelement" type="submit" class="btn btn-primary">Ajouter</button>
         <?php
         require('connect.php');
         if (isset($_POST['nelement'])) {
@@ -219,17 +226,17 @@ function nelement(){
                     $code++;
                     $sql = 'INSERT INTO ' . $vertype . ' set ' . $debut . '_libelle = "' . $verlibelle . '", ' . $debut . '_code = "' . strtoupper($debut) . $code . '"';
                     mysqli_query($db, $sql);
-                    print('<meta http-equiv="refresh" content="2;URL=gestion.php?stockage">');
+                    print('</section><meta http-equiv="refresh" content="2;URL=gestion.php?stockage">');
                     print('<div class="alert alert-success">
                               <strong>Success!</strong> Nouvel élélement ajouter à la base
                                 </div>');
                 } else {
-                    print('<div class="alert alert-danger">
+                    print('</section><div class="alert alert-danger">
                             <strong>Danger!</strong> Un élément existant porte déjà ce nom
                             </div>');
                 }
             } else {
-                print('<div class="alert alert-danger">
+                print('</section><div class="alert alert-danger">
                             <strong>Danger!</strong> Vous n\'avez pas indiquez la désignation
                             </div>');
             }
@@ -237,8 +244,8 @@ function nelement(){
             mysqli_close($db);
         }
         ?>
-        <button name="nelement" type="submit" class="btn btn-primary">Ajouter</button>
     </form>
+    </section>
     </br>
     <?php
 }
@@ -366,6 +373,13 @@ function listesetup(){
 }
 function nsetup(){
         ?>
+
+    <!-- les boutons d'actions -->
+    <button class="btn btn-primary" type="button" data-target="#Monnsetup" data-toggle="collapse" aria-expanded="false" aria-controls="MonCollapse">Ajouter un setup</button>
+
+    <!-- le contenu masqué -->
+    <section id="Monnsetup" class="collapse">
+        </br>
         <form method="post" id="nsetup" class="form-inline">
             <div class="form-group">
                 <label class="sr-only">Ordinateur</label>
@@ -421,11 +435,12 @@ function nsetup(){
                     ?>
                 </select>
             </div>
+            <button name="nsetup" type="submit" class="btn btn-primary">Ajouter</button>
             <?php
             require('connect.php');
             if (isset($_POST['nsetup'])){
                 if(empty($_POST['post_ord']) || empty($_POST['post_sou']) || empty($_POST['post_cla']) || empty($_POST['post_ecran'])){
-                    print('<div class="alert alert-danger">
+                    print('</section><div class="alert alert-danger">
                             <strong>Danger!</strong> Un setup doit être constituer d\'un ordinateur, d\'une souris, d\'un clavier, et d\'un écran 
                             </div>');
                 } else {
@@ -457,7 +472,7 @@ function nsetup(){
                     $sql = 'INSERT INTO setup set setup_code = "' . strtoupper("set") . $code . '", ord_id = "' . $ord_ver[0] . '", sou_id = "'. $sou_ver[0] . '", cla_id = "' . $cla_ver[0] . '", ecran_id = "' . $ecran_ver[0] . '", etat = "disponible"';
                     mysqli_query($db, $sql);
                     print('<meta http-equiv="refresh" content="2;URL=gestion.php?stockage#lsetup">');
-                    print('<div class="alert alert-success">
+                    print('</section><div class="alert alert-success">
                               <strong>Success!</strong> Nouveau setup ajouter à la base
                                 </div>');
                 }
@@ -465,8 +480,8 @@ function nsetup(){
                 mysqli_close($db);
             }
             ?>
-            <button name="nsetup" type="submit" class="btn btn-primary">Ajouter</button>
         </form>
+        </section>
         </br>
     </div>
     <?php
