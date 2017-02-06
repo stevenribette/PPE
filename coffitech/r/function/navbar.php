@@ -18,9 +18,10 @@ function navbar(){
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Stockage
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="gestion.php?stockage">Liste</a></li>
-                        <li><a href="gestion.php?stockage#ajouter">Ajouter</a></li>
-                        <li><a href="gestion.php?stockage#setup">Setup</a></li>
+                        <li><a href="gestion.php?stockage#lelement">Liste des élément</a></li>
+                        <li><a href="gestion.php?stockage#nelement">Ajouter un élément</a></li>
+                        <li><a href="gestion.php?stockage#lsetup">Liste des setup</a></li>
+                        <li><a href="gestion.php?stockage#nsetup">Ajouter un setup</a></li>
                     </ul>
                 </li>
                 <li><a href="gestion.php?client">Client</a></li>
