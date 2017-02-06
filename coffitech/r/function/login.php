@@ -49,7 +49,7 @@ function login()
                 }
                 print('<div id="login" >');
                 if ($status == 0 && $page == '/PPE/coffitech/index.php') {
-                    print('<form method="POST" >');
+                    print('<form method="POST" class="form-inline" >');
                     print('<input type="hidden" name="login" value="true" />');
                     print('<p>Identifiant :<input type="text" name="pseudo" /></p>');
                     print('<p>Mot de passe :<input type="password" name="password" /></p>');
@@ -65,7 +65,7 @@ function login()
                     }
 
 
-                    print('<form method="POST" >');
+                    print('<form method="POST" class="form-inline" >');
                     print('<input type="hidden" name="logout" value="true" />');
                     print('<button type="submit" value="D�connecter" class="glyphicon glyphicon-log-out"></button>');
                     print('</form>');

@@ -72,7 +72,7 @@ function listeelement()
     <tr>
         <th>Code</th>
         <th>Designation</th>
-        <th>Etat</th>
+        <th>Modifier</th>
         <th>Effacer</th>
     </tr>
     </thead>
@@ -84,7 +84,8 @@ function listeelement()
     //lecture des resultats
     while ($Row = mysqli_fetch_array($result)) {
         $supp = '<a href="gestion.php?stockage&amp;suppord=' . $Row[0] . '" >X</a>';
-        print('<tr id=' . $Row[1] . '><td>' . $Row[2] . '</td><td>' . $Row[1] . '</td><td>' . $Row[3] . '</td><td>' . $supp . '</td></tr>');
+        $modif  = "modifier";
+        print('<tr id=' . $Row[1] . '><td>' . $Row[2] . '</td><td>' . $Row[1] . '</td><td>' . $modif . '</td><td>' . $supp . '</td></tr>');
     }
 
     if (isset($_GET['suppord'])) {
@@ -106,7 +107,8 @@ function listeelement()
     //lecture des resultats
     while ($Row = mysqli_fetch_array($result)) {
         $supp = '<a href="gestion.php?stockage&amp;suppsou=' . $Row[0] . '" >X</a>';
-        print('<tr><td>' . $Row[2] . '</td><td>' . $Row[1] . '</td><td>' . $Row[3] . '</td><td>' . $supp . '</td></tr>');
+        $modif  = "modifier";
+        print('<tr><td>' . $Row[2] . '</td><td>' . $Row[1] . '</td><td>' . $modif . '</td><td>' . $supp . '</td></tr>');
     }
 
     if (isset($_GET['suppsou'])) {
@@ -128,7 +130,8 @@ function listeelement()
     //lecture des resultats
     while ($Row = mysqli_fetch_array($result)) {
         $supp = '<a href="gestion.php?stockage&amp;suppcla=' . $Row[0] . '" >X</a>';
-        print('<tr><td>' . $Row[2] . '</td><td>' . $Row[1] . '</td><td>' . $Row[3] . '</td><td>' . $supp . '</td></tr>');
+        $modif  = "modifier";
+        print('<tr><td>' . $Row[2] . '</td><td>' . $Row[1] . '</td><td>' . $modif . '</td><td>' . $supp . '</td></tr>');
     }
 
     if (isset($_GET['suppcla'])) {
@@ -150,7 +153,8 @@ function listeelement()
     //lecture des resultats
     while ($Row = mysqli_fetch_array($result)) {
         $supp = '<a href="gestion.php?stockage&amp;suppecr=' . $Row[0] . '" >X</a>';
-        print('<tr><td>' . $Row[2] . '</td><td>' . $Row[1] . '</td><td>' . $Row[3] . '</td><td>' . $supp . '</td></tr>');
+        $modif  = "modifier";
+        print('<tr><td>' . $Row[2] . '</td><td>' . $Row[1] . '</td><td>' . $modif . '</td><td>' . $supp . '</td></tr>');
     }
 
     if (isset($_GET['suppecr'])) {
@@ -185,13 +189,6 @@ function nelement(){
             <label class="sr-only mb-2 mr-sm-2 mb-sm-0">Libelle</label>
             <input type="text" name="post_libelle" class="form-control" placeholder="Entrer la designation">
         </div>
-        <div class="form-group">
-            <label class="sr-only mb-2 mr-sm-2 mb-sm-0">Etat</label>
-            <select class="form-control" name="post_etat">
-                <option>disponible</option>
-                <option>utiliser</option>
-            </select>
-        </div>
         <?php
         require('connect.php');
         if (isset($_POST['nelement'])) {
@@ -220,7 +217,7 @@ function nelement(){
                     mysqli_free_result($result);
                     $code = $code[0];
                     $code++;
-                    $sql = 'INSERT INTO ' . $vertype . ' set ' . $debut . '_libelle = "' . $verlibelle . '", ' . $debut . '_code = "' . strtoupper($debut) . $code . '", etat = "' . $_POST['post_etat'] . '"';
+                    $sql = 'INSERT INTO ' . $vertype . ' set ' . $debut . '_libelle = "' . $verlibelle . '", ' . $debut . '_code = "' . strtoupper($debut) . $code . '"';
                     mysqli_query($db, $sql);
                     print('<meta http-equiv="refresh" content="2;URL=gestion.php?stockage">');
                     print('<div class="alert alert-success">
@@ -251,10 +248,11 @@ function listesetup(){
     <thead>
     <tr>
         <th>Code</th>
-        <th>Ord</th>
-        <th>Sou</th>
-        <th>Cla</th>
+        <th>Ordinateur</th>
+        <th>Souris</th>
+        <th>Clavier</th>
         <th>Ecran</th>
+        <th>Etat</th>
         <th>Effacer</th>
     </tr>
     </thead>
@@ -266,13 +264,95 @@ function listesetup(){
     //lecture des resultats
     while ($Row = mysqli_fetch_array($result)) {
         $supp = '<a href="gestion.php?stockage&amp;suppsetup=' . $Row[0] . '" >X</a>';
-        print('<tr id=' . $Row[1] . '><td>' . $Row[1] . '</td><td>' . $Row[2] . '</td><td>' . $Row[3] . '</td><td>' . $Row[4] . '</td><td>' . $Row[5] . '</td><td>' . $supp . '</td></tr>');
+        $modutil = '<a href="gestion.php?stockage&amp;modutilsetup=' . $Row[0] . '" >Utiliser</a>';
+        $moddispo = '<a href="gestion.php?stockage&amp;moddisposetup=' . $Row[0] . '" >Disponible</a>';
+        $modhs = '<a href="gestion.php?stockage&amp;modhssetup=' . $Row[0] . '" >Hors-service</a>';
+        $req1 = 'SELECT ord_libelle, ord_code FROM ordinateur WHERE ord_id = "' . $Row[2] . '"';
+        $req2 = 'SELECT sou_libelle, sou_code FROM souris WHERE sou_id = "' . $Row[3] . '"';
+        $req3 = 'SELECT cla_libelle, cla_code FROM clavier WHERE cla_id = "' . $Row[4] . '"';
+        $req4 = 'SELECT ecran_libelle, ecran_code FROM ecran WHERE ecran_id = "' . $Row[5] . '"';
+        $res1 = mysqli_query($db, $req1);
+        $res2 = mysqli_query($db, $req2);
+        $res3 = mysqli_query($db, $req3);
+        $res4 = mysqli_query($db, $req4);
+        $ord_ver = mysqli_fetch_array($res1);
+        $sou_ver = mysqli_fetch_array($res2);
+        $cla_ver = mysqli_fetch_array($res3);
+        $ecran_ver = mysqli_fetch_array($res4);
+        //libération des ressources
+        mysqli_free_result($res1);
+        mysqli_free_result($res2);
+        mysqli_free_result($res3);
+        mysqli_free_result($res4);
+        print('<tr id=' . $Row[1] . '><td>' . $Row[1] . '</td><td>
+        <div class="dropdown">
+          <button class="btn btn-info dropdown-toggle btn-xs btn-block" type="button" data-toggle="dropdown">'. $ord_ver[0] .'
+                <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a title="Code">'. $ord_ver[1] .'</a></li>
+          </ul>
+        </div>
+        </td><td>
+        <div class="dropdown">
+          <button class="btn btn-info dropdown-toggle btn-xs btn-block" type="button" data-toggle="dropdown">'. $sou_ver[0] .'
+                <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a title="Code">'. $sou_ver[1] .'</a></li>
+          </ul>
+        </div>
+        </td><td>
+        <div class="dropdown">
+          <button class="btn btn-info dropdown-toggle btn-xs btn-block" type="button" data-toggle="dropdown">'. $cla_ver[0] .'
+                <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a title="Code">'. $cla_ver[1] .'</a></li>
+          </ul>
+        </div>
+        </td><td>
+        <div class="dropdown">
+          <button class="btn btn-info dropdown-toggle btn-xs btn-block" type="button" data-toggle="dropdown">'. $ecran_ver[0] .'
+                <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a title="Code">'. $ecran_ver[1] .'</a></li>
+          </ul>
+        </div>
+        </td><td>
+        <div class="dropdown">
+          <button class="btn btn-info dropdown-toggle btn-xs btn-block" type="button" data-toggle="dropdown">'. $Row[6] .'
+                <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><button class="btn btn-info btn-block">'. $modutil .'</button></li>
+            <li><button class="btn btn-info btn-block">'. $moddispo .'</button></li>
+            <li><button class="btn btn-info btn-block">'. $modhs .'</button></li>
+          </ul>
+        </div>
+        </td><td>' . $supp . '</td></tr>');
     }
-
+    if(isset($_GET["modutilsetup"])) {
+        $sql = 'UPDATE setup
+        SET etat = "utiliser"
+        WHERE setup_id = '. $_GET['modutilsetup'].' ';
+        mysqli_query($db, $sql);
+        print('<meta http-equiv="refresh" content="0;URL=gestion.php?stockage#lsetup">');
+    }
+    if(isset($_GET["moddisposetup"])) {
+        $sql = 'UPDATE setup
+        SET etat = "disponible"
+        WHERE setup_id = '. $_GET['moddisposetup'].' ';
+        mysqli_query($db, $sql);
+        print('<meta http-equiv="refresh" content="0;URL=gestion.php?stockage#lsetup">');
+    }
+    if(isset($_GET["modhssetup"])) {
+        $sql = 'UPDATE setup
+        SET etat = "hors-service"
+        WHERE setup_id = '. $_GET['modhssetup'].' ';
+        mysqli_query($db, $sql);
+        print('<meta http-equiv="refresh" content="0;URL=gestion.php?stockage#lsetup">');
+    }
     if (isset($_GET['suppsetup'])) {
         $sql = 'DELETE FROM setup WHERE setup_id=' . $_GET['suppsetup'];
         mysqli_query($db, $sql);
-        $nom = $_GET['suppsetup'];
+        print($_GET['suppsetup']);
         print('<meta http-equiv="refresh" content="0;URL=gestion.php?stockage#lsetup">');
     }
     //libération des ressources
@@ -374,7 +454,7 @@ function nsetup(){
                         $code = 0;
                     }
                     $code++;
-                    $sql = 'INSERT INTO setup set setup_code = "' . strtoupper("set") . $code . '", ord_id = "' . $ord_ver[0] . '", sou_id = "'. $sou_ver[0] . '", cla_id = "' . $cla_ver[0] . '", ecran_id = "' . $ecran_ver[0] . '"';
+                    $sql = 'INSERT INTO setup set setup_code = "' . strtoupper("set") . $code . '", ord_id = "' . $ord_ver[0] . '", sou_id = "'. $sou_ver[0] . '", cla_id = "' . $cla_ver[0] . '", ecran_id = "' . $ecran_ver[0] . '", etat = "disponible"';
                     mysqli_query($db, $sql);
                     print('<meta http-equiv="refresh" content="2;URL=gestion.php?stockage#lsetup">');
                     print('<div class="alert alert-success">
