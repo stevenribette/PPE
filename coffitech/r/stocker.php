@@ -31,17 +31,17 @@ if (isset($_FILES['fichier']) AND $_FILES['fichier']['error'] == 0)
     $nam = $nam + 1;
     $info = pathinfo($_FILES['fichier']['name']);
     $extension = $info['extension'];
-    $extension_autoriser = array('jpg');
+    $extension_autoriser = array('jpg', 'png');
     if(in_array($extension, $extension_autoriser))
     {
     //on stock le fichier
-        move_uploaded_file($_FILES['fichier']['tmp_name'],$dir_nom."/".basename($identifiant.".".$extension));
+        move_uploaded_file($_FILES['fichier']['tmp_name'],$dir_nom."/".basename($identifiant.".jpg"));
 
         $message = "le fichier &#224 &#233t&#233 stocker &#224 cette adresse: http://coffitech/r/profil/".$identifiant."/".$identifiant.".".$extension."";
     }
     else
     {
-        $message = "Le fichier doit être au format JPG.";
+        $message = "Le fichier doit être au format JPG ou PNG.";
     }
 
 }

@@ -5,9 +5,9 @@ function profil (){
     while ($Row = mysqli_fetch_array($result)) {
         $identifiant = $Row[0];
     }
-
     $dir_nom = 'profil/'.$identifiant; // dossier listé (pour lister le répertoir courant : $dir_nom = '.'  --> ('point')
-    $dir = opendir($dir_nom) or die('Erreur de listage : le répertoire n\'existe pas'); // on ouvre le contenu du dossier courant
+    $dir = opendir($dir_nom) or die('Erreur de listage : le répertoire n\'existe pas'); // on ouvre le contenu du dossier courant }
+
     $fichier= array(); // on déclare le tableau contenant le nom des fichiers
 
     while($element = readdir($dir)) {
@@ -51,7 +51,7 @@ function profil (){
 
     <section id="Monnelement" class="collapse">');
     print('<input type="file" name="fichier" class="btn btn-default btn-block">
-            <input class="btn btn-primary btn-block" type="submit" value="Personaliser"/>
+            <input class="btn btn-primary btn-block" type="submit" value="Personnaliser"/>
             </section></form>');
     print('</div><div class="col-sm-4">
     <table class="table table-striped" id="lelement">
@@ -70,16 +70,16 @@ function profil (){
             $i++;
         }
     }else if($_SESSION['Level'] == 3){
-        print('<tr><td>'.$droits[2].'</td></tr>');
-        print('<tr><td>'.$droits[4].'</td></tr>');
-    }else if($_SESSION['Level'] == 2){
         print('<tr><td>'.$droits[1].'</td></tr>');
         print('<tr><td>'.$droits[3].'</td></tr>');
+    }else if($_SESSION['Level'] == 2){
+        print('<tr><td>'.$droits[0].'</td></tr>');
+        print('<tr><td>'.$droits[2].'</td></tr>');
+        print('<tr><td>'.$droits[4].'</td></tr>');
         print('<tr><td>'.$droits[5].'</td></tr>');
-        print('<tr><td>'.$droits[6].'</td></tr>');
     }
     else if($_SESSION['Level'] == 1){
-        print('<tr><td>'.$droits[6].'</p>');
+        print('<tr><td>'.$droits[5].'</p>');
     }
     print('</tbody>
             </table>

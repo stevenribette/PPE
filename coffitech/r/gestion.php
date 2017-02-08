@@ -30,13 +30,21 @@
     }
     else if(isset($_GET['fournisseurs'])){
         fournisseur();
+    }else if(isset($_GET['personnel'])){
+        personnel();
+    }else if(isset($_GET['produit'])){
+        produit();
+    }else if(isset($_GET['document'])){
+        document();
     }else{
     ?>
         <div class="container">
             <div class="row">
                 <?php
                     require ("profil.php");
-                    profil();
+                    if(isset($_SESSION['login'])) {
+                        profil();
+                    }
                 ?>
             </div>
         </div>
