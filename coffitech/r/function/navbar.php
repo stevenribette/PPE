@@ -25,8 +25,8 @@ function navbar(){
                     </ul>
                 </li>
                 <li><a href="gestion.php?client">Client</a></li>
-                <li><a href="?personnel">Personnel</a></li>
                 <li><a href="?fournisseurs">Fournisseurs</a></li>
+                <li><a href="?personnel">Personnel</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>

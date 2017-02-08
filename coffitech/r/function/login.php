@@ -27,8 +27,17 @@ function login()
                     while ($Row = mysqli_fetch_array($Resul)) {
                         if ($Row[1] == $_POST['pseudo'] && $Row[2] == $_POST['password']) {
                             $_SESSION['login'] = $Row[0];
+                            $_SESSION['pseudo'] = $Row[1];
+                            $nom = $_SESSION['pseudo'];
+                            $filename = "./r/profil/$nom";
+                            if(!is_dir($filename)){
+                                mkdir($filename);
+                            }
                             if ($page == '/PPE/coffitech/index.php') {
-                                print('<meta http-equiv="refresh" content="0;URL=r/gestion.php">');
+                                print('<meta http-equiv="refresh" content="1";URL=r/gestion.php">');
+                                print('</section><div class="alert alert-success">
+                                        <strong>Success!</strong> Connection en cours
+                                        </div>');
                             }
                         }
                     }
@@ -40,8 +49,7 @@ function login()
                     $status = 1;
                     $resultat = mysqli_query($db, 'SELECT * FROM user_connect WHERE us_id="' . $_SESSION['login'] . '"');
                     while ($Row = mysqli_fetch_array($resultat)) {
-                        $Nom = $Row[1];
-                        //$_SESSION['Level'] = $Row['level_user'];
+                        $_SESSION['Level'] = $Row[3];
                     }
                     if ($page == '/PPE/coffitech/index.php') {
                         print('<meta http-equiv="refresh" content="0;URL=r/gestion.php">');
@@ -60,7 +68,6 @@ function login()
                 } else if ($status == 1) {
                     if ($page == '/PPE/coffitech/index.php') {
                         print('<div id="loginOn" >');
-                        print('Bonjours ' . $Nom . '');
                         print('<br />');
                     }
 

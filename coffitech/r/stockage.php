@@ -72,7 +72,7 @@ function listeelement()
     <tr>
         <th>Code</th>
         <th>Designation</th>
-        <th>Modifier</th>
+        <th>Marque</th>
         <th>Effacer</th>
     </tr>
     </thead>
@@ -84,10 +84,36 @@ function listeelement()
     //lecture des resultats
     while ($Row = mysqli_fetch_array($result)) {
         $supp = '<a href="gestion.php?stockage&amp;suppord=' . $Row[0] . '" >X</a>';
-        $modif  = "modifier";
-        print('<tr id=' . $Row[1] . '><td>' . $Row[2] . '</td><td>' . $Row[1] . '</td><td>' . $modif . '</td><td>' . $supp . '</td></tr>');
+        $modif  = '<div class="form-group">
+                    <input type="text" name="clibelle" class="form-control" placeholder="Entrer la designation">
+                    </div>';
+        print('<tr id=' . $Row[1] . '><td>' . $Row[2] . '</td>
+        <td><div class="dropdown">
+          <button class="btn btn-info dropdown-toggle btn-xs btn-block" type="button" data-toggle="dropdown">'. $Row[1] .'
+                <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <form method="post" id="celement" class="form-inline">
+            <li>'. $modif .'</li>
+            <li><button name="celement" type="submit" class="btn btn-block btn-info">Modifier</button></li>
+            </form>
+          </ul>
+        </div>
+        </td>
+        <td>' . $Row[3] . '</td>
+        <td>' . $supp . '</td></tr>');
     }
-
+    if(isset($_POST["celement"])) {
+        if (!empty($_POST['clibelle'])) {
+            $sql = 'UPDATE ordinateur
+            SET ord_libelle = '.$_POST['clibelle'].'
+            WHERE ord_id = '. $Row[0];
+            mysqli_query($db, $sql);
+            print('<meta http-equiv="refresh" content="10";URL=gestion.php?stockage#lelement">');
+        }
+        else{
+            print($Row[0]);
+        }
+    }
     if (isset($_GET['suppord'])) {
         $sql = 'DELETE FROM ordinateur WHERE ord_id=' . $_GET['suppord'];
         mysqli_query($db, $sql);
@@ -108,7 +134,7 @@ function listeelement()
     while ($Row = mysqli_fetch_array($result)) {
         $supp = '<a href="gestion.php?stockage&amp;suppsou=' . $Row[0] . '" >X</a>';
         $modif  = "modifier";
-        print('<tr><td>' . $Row[2] . '</td><td>' . $Row[1] . '</td><td>' . $modif . '</td><td>' . $supp . '</td></tr>');
+        print('<tr><td>' . $Row[2] . '</td><td>' . $Row[1] . '</td><td>' . $Row[3] . '</td><td>' . $supp . '</td></tr>');
     }
 
     if (isset($_GET['suppsou'])) {
@@ -131,7 +157,7 @@ function listeelement()
     while ($Row = mysqli_fetch_array($result)) {
         $supp = '<a href="gestion.php?stockage&amp;suppcla=' . $Row[0] . '" >X</a>';
         $modif  = "modifier";
-        print('<tr><td>' . $Row[2] . '</td><td>' . $Row[1] . '</td><td>' . $modif . '</td><td>' . $supp . '</td></tr>');
+        print('<tr><td>' . $Row[2] . '</td><td>' . $Row[1] . '</td><td>' . $Row[3] . '</td><td>' . $supp . '</td></tr>');
     }
 
     if (isset($_GET['suppcla'])) {
@@ -154,7 +180,7 @@ function listeelement()
     while ($Row = mysqli_fetch_array($result)) {
         $supp = '<a href="gestion.php?stockage&amp;suppecr=' . $Row[0] . '" >X</a>';
         $modif  = "modifier";
-        print('<tr><td>' . $Row[2] . '</td><td>' . $Row[1] . '</td><td>' . $modif . '</td><td>' . $supp . '</td></tr>');
+        print('<tr><td>' . $Row[2] . '</td><td>' . $Row[1] . '</td><td>' . $Row[3] . '</td><td>' . $supp . '</td></tr>');
     }
 
     if (isset($_GET['suppecr'])) {
@@ -195,11 +221,16 @@ function nelement(){
             <label class="sr-only mb-2 mr-sm-2 mb-sm-0">Libelle</label>
             <input type="text" name="post_libelle" class="form-control" placeholder="Entrer la designation">
         </div>
+        <div class="form-group">
+            <label class="sr-only mb-2 mr-sm-2 mb-sm-0">Marque</label>
+            <input type="text" name="post_marque" class="form-control" placeholder="Entrer la marque">
+        </div>
         <button name="nelement" type="submit" class="btn btn-primary">Ajouter</button>
         <?php
         require('connect.php');
         if (isset($_POST['nelement'])) {
             if (!empty($_POST['post_libelle'])) {
+                if (!empty($_POST['post_marque'])) {
                 if ($_POST['post_type'] == "ordinateur") {
                     $debut = "ord";
                 } else if ($_POST['post_type'] == "souris") {
@@ -224,9 +255,9 @@ function nelement(){
                     mysqli_free_result($result);
                     $code = $code[0];
                     $code++;
-                    $sql = 'INSERT INTO ' . $vertype . ' set ' . $debut . '_libelle = "' . $verlibelle . '", ' . $debut . '_code = "' . strtoupper($debut) . $code . '"';
+                    $sql = 'INSERT INTO ' . $vertype . ' set ' . $debut . '_libelle = "' . $verlibelle . '", ' . $debut . '_code = "' . strtoupper($debut) . $code . '", ' . $debut . '_marque ="'.$_POST['post_marque'].'"';
                     mysqli_query($db, $sql);
-                    print('</section><meta http-equiv="refresh" content="2;URL=gestion.php?stockage">');
+                    print('</section><meta http-equiv="refresh" content="1;URL=gestion.php?stockage">');
                     print('<div class="alert alert-success">
                               <strong>Success!</strong> Nouvel élélement ajouter à la base
                                 </div>');
@@ -234,6 +265,11 @@ function nelement(){
                     print('</section><div class="alert alert-danger">
                             <strong>Danger!</strong> Un élément existant porte déjà ce nom
                             </div>');
+                }
+            }else{
+                print('</section><div class="alert alert-danger">
+                        <strong>Danger!</strong> Vous n\'avez pas indiquez la marque
+                        </div>');
                 }
             } else {
                 print('</section><div class="alert alert-danger">
@@ -274,10 +310,10 @@ function listesetup(){
         $modutil = '<a href="gestion.php?stockage&amp;modutilsetup=' . $Row[0] . '" >Utiliser</a>';
         $moddispo = '<a href="gestion.php?stockage&amp;moddisposetup=' . $Row[0] . '" >Disponible</a>';
         $modhs = '<a href="gestion.php?stockage&amp;modhssetup=' . $Row[0] . '" >Hors-service</a>';
-        $req1 = 'SELECT ord_libelle, ord_code FROM ordinateur WHERE ord_id = "' . $Row[2] . '"';
-        $req2 = 'SELECT sou_libelle, sou_code FROM souris WHERE sou_id = "' . $Row[3] . '"';
-        $req3 = 'SELECT cla_libelle, cla_code FROM clavier WHERE cla_id = "' . $Row[4] . '"';
-        $req4 = 'SELECT ecran_libelle, ecran_code FROM ecran WHERE ecran_id = "' . $Row[5] . '"';
+        $req1 = 'SELECT ord_libelle, ord_code, ord_marque FROM ordinateur WHERE ord_id = "' . $Row[2] . '"';
+        $req2 = 'SELECT sou_libelle, sou_code, sou_marque FROM souris WHERE sou_id = "' . $Row[3] . '"';
+        $req3 = 'SELECT cla_libelle, cla_code, cla_marque FROM clavier WHERE cla_id = "' . $Row[4] . '"';
+        $req4 = 'SELECT ecran_libelle, ecran_code, ecran_marque FROM ecran WHERE ecran_id = "' . $Row[5] . '"';
         $res1 = mysqli_query($db, $req1);
         $res2 = mysqli_query($db, $req2);
         $res3 = mysqli_query($db, $req3);
@@ -297,6 +333,7 @@ function listesetup(){
                 <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a title="Code">'. $ord_ver[1] .'</a></li>
+            <li><a title="Marque">'. $ord_ver[2] .'</a></li>
           </ul>
         </div>
         </td><td>
@@ -305,6 +342,7 @@ function listesetup(){
                 <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a title="Code">'. $sou_ver[1] .'</a></li>
+            <li><a title="Marque">'. $sou_ver[2] .'</a></li>
           </ul>
         </div>
         </td><td>
@@ -313,6 +351,7 @@ function listesetup(){
                 <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a title="Code">'. $cla_ver[1] .'</a></li>
+            <li><a title="Marque">'. $cla_ver[2] .'</a></li>
           </ul>
         </div>
         </td><td>
@@ -321,6 +360,7 @@ function listesetup(){
                 <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a title="Code">'. $ecran_ver[1] .'</a></li>
+            <li><a title="Marque">'. $ecran_ver[2] .'</a></li>
           </ul>
         </div>
         </td><td>
@@ -471,7 +511,7 @@ function nsetup(){
                     $code++;
                     $sql = 'INSERT INTO setup set setup_code = "' . strtoupper("set") . $code . '", ord_id = "' . $ord_ver[0] . '", sou_id = "'. $sou_ver[0] . '", cla_id = "' . $cla_ver[0] . '", ecran_id = "' . $ecran_ver[0] . '", etat = "disponible"';
                     mysqli_query($db, $sql);
-                    print('<meta http-equiv="refresh" content="2;URL=gestion.php?stockage#lsetup">');
+                    print('<meta http-equiv="refresh" content="1;URL=gestion.php?stockage#lsetup">');
                     print('</section><div class="alert alert-success">
                               <strong>Success!</strong> Nouveau setup ajouter à la base
                                 </div>');

@@ -33,7 +33,12 @@
     }else{
     ?>
         <div class="container">
-            <H1>Welcome in coffitech gestion</H1>
+            <div class="row">
+                <?php
+                    require ("profil.php");
+                    profil();
+                ?>
+            </div>
         </div>
     <?php
     }

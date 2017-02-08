@@ -89,3 +89,10 @@ body{
 .dropdown-menu a{
     color:snow;
 }
+
+#upload img{
+    max-width: 50%;
+}
+.container .col-sm-4 p{
+    text-align: center;
+}
