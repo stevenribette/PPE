@@ -31,12 +31,12 @@ function navbar(){
                         <li><a href="gestion.php?client#nelement">Ajouter un client</a></li>
                     </ul>
                 </li>
-                <li class="dropdown" id="fournisseurs">
+                <li class="dropdown" id="fournisseur">
                     <a class="dropdown-toggle" href="#">Fournisseur
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="gestion.php?fournisseurs#lelement">Liste des fournisseurs</a></li>
-                        <li><a href="gestion.php?fournisseurs#nelement">Ajouter un fournisseur</a></li>
+                        <li><a href="gestion.php?fournisseur#lelement">Liste des fournisseurs</a></li>
+                        <li><a href="gestion.php?fournisseur#nelement">Ajouter un fournisseur</a></li>
                     </ul>
                 </li>
                 <li class="dropdown" id="personnel">
@@ -56,12 +56,12 @@ function navbar(){
                     </ul>
                 </li>
                 <li class="dropdown" id="document">
-                    <a class="dropdown-toggle" href="#">document
+                    <a class="dropdown-toggle" href="#">Document
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="gestion.php?document#devis">Devis</a></li>
-                        <li><a href="gestion.php?document#commande">Commande</a></li>
-                        <li><a href="gestion.php?document#facture">Facture</a></li>
+                        <li><a href="gestion.php?devis">Devis</a></li>
+                        <li><a href="gestion.php?commande">Commande</a></li>
+                        <li><a href="gestion.php?facture">Facture</a></li>
                     </ul>
                 </li>
             </ul>
@@ -85,7 +85,7 @@ function navbar(){
             <script>
             $('#stockage').addClass('hidden');
             $('#client').addClass('hidden');
-            $('#fournisseurs').addClass('hidden');
+            $('#fournisseur').addClass('hidden');
             $('#personnel').addClass('hidden');
             $('#produit').addClass('hidden');
             $("#document .dropdown-toggle").attr("data-toggle", "dropdown");
@@ -98,7 +98,7 @@ function navbar(){
                 $('#client').addClass('hidden');
                 $('#personnel').addClass('hidden');
                 $("#stockage .dropdown-toggle").attr("data-toggle", "dropdown");
-                $("#fournisseurs .dropdown-toggle").attr("data-toggle", "dropdown");
+                $("#fournisseur .dropdown-toggle").attr("data-toggle", "dropdown");
                 $("#produit .dropdown-toggle").attr("data-toggle", "dropdown");
                 $("#document .dropdown-toggle").attr("data-toggle", "dropdown");
             </script>
@@ -108,7 +108,7 @@ function navbar(){
             ?>
             <script>
                 $('#stockage').addClass('hidden');
-                $('#fournisseurs').addClass('hidden');
+                $('#fournisseur').addClass('hidden');
                 $('#produit').addClass('hidden');
                 $('#document').addClass('hidden');
                 $("#client .dropdown-toggle").attr("data-toggle", "dropdown");
@@ -120,7 +120,7 @@ function navbar(){
             ?>
             <script>
                 $("#stockage .dropdown-toggle").attr("data-toggle", "dropdown");
-                $("#fournisseurs .dropdown-toggle").attr("data-toggle", "dropdown");
+                $("#fournisseur .dropdown-toggle").attr("data-toggle", "dropdown");
                 $("#produit .dropdown-toggle").attr("data-toggle", "dropdown");
                 $("#document .dropdown-toggle").attr("data-toggle", "dropdown");
                 $("#client .dropdown-toggle").attr("data-toggle", "dropdown");

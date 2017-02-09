@@ -18,7 +18,7 @@ function listeelement()
                     <span class="glyphicon glyphicon-search form-control-feedback"></span>
                 </div>
                 <?php
-                require('connect.php');
+                require('function/connect.php');
                 if (count($_GET) > 0) {
                     if (!empty($_GET['post_search'])) {
                         $versearch = $_GET['post_search'];
@@ -78,7 +78,7 @@ function listeelement()
     </thead>
     <tbody>
     <?php
-    require('connect.php');
+    require('function/connect.php');
     //exécution de la requête
     $result = mysqli_query($db, 'SELECT * FROM ordinateur');
     //lecture des resultats
@@ -127,7 +127,7 @@ function listeelement()
     ?>
     <tr></tr>
     <?php
-    require('connect.php');
+    require('function/connect.php');
     //exécution de la requête
     $result = mysqli_query($db, 'SELECT * FROM souris');
     //lecture des resultats
@@ -150,7 +150,7 @@ function listeelement()
     ?>
     <tr></tr>
     <?php
-    require('connect.php');
+    require('function/connect.php');
     //exécution de la requête
     $result = mysqli_query($db, 'SELECT * FROM clavier');
     //lecture des resultats
@@ -173,7 +173,7 @@ function listeelement()
     ?>
     <tr></tr>
     <?php
-    require('connect.php');
+    require('function/connect.php');
     //exécution de la requête
     $result = mysqli_query($db, 'SELECT * FROM ecran');
     //lecture des resultats
@@ -227,7 +227,7 @@ function nelement(){
         </div>
         <button name="nelement" type="submit" class="btn btn-primary">Ajouter</button>
         <?php
-        require('connect.php');
+        require('function/connect.php');
         if (isset($_POST['nelement'])) {
             if (!empty($_POST['post_libelle'])) {
                 if (!empty($_POST['post_marque'])) {
@@ -301,7 +301,7 @@ function listesetup(){
     </thead>
     <tbody>
     <?php
-    require('connect.php');
+    require('function/connect.php');
     //exécution de la requête
     $result = mysqli_query($db, 'SELECT * FROM setup');
     //lecture des resultats
@@ -425,7 +425,7 @@ function nsetup(){
                 <label class="sr-only">Ordinateur</label>
                 <select class="form-control" name="post_ord">
                     <?php
-                    require('connect.php');
+                    require('function/connect.php');
                     $result1 = mysqli_query($db, 'SELECT ord_id, ord_code as CODE FROM ordinateur WHERE NOT EXISTS(SELECT null FROM setup WHERE setup.ord_id = ordinateur.ord_id)');
                     while ($Row1 = mysqli_fetch_array($result1)) {
                         print('<option>' . $Row1['CODE'] . '</option>');
@@ -437,7 +437,7 @@ function nsetup(){
                 <label class="sr-only">Souris</label>
                 <select class="form-control" name="post_sou">
                     <?php
-                    require('connect.php');
+                    require('function/connect.php');
                     //exécution de la requête
                     $result2 = mysqli_query($db, 'SELECT sou_id, sou_code as CODE FROM souris WHERE NOT EXISTS(SELECT null FROM setup WHERE setup.sou_id = souris.sou_id)');
                     //lecture des resultats
@@ -451,7 +451,7 @@ function nsetup(){
                 <label class="sr-only">Clavier</label>
                 <select class="form-control" name="post_cla">
                     <?php
-                    require('connect.php');
+                    require('function/connect.php');
                     //exécution de la requête
                     $result3 = mysqli_query($db, 'SELECT cla_id, cla_code as CODE FROM clavier WHERE NOT EXISTS(SELECT null FROM setup WHERE setup.cla_id = clavier.cla_id)');
                     //lecture des resultats
@@ -465,7 +465,7 @@ function nsetup(){
                 <label class="sr-only">Ecran</label>
                 <select class="form-control" name="post_ecran">
                     <?php
-                    require('connect.php');
+                    require('function/connect.php');
                     //exécution de la requête
                     $result4 = mysqli_query($db, 'SELECT ecran_id, ecran_code as CODE FROM ecran WHERE NOT EXISTS(SELECT null FROM setup WHERE setup.ecran_id = ecran.ecran_id)');
                     //lecture des resultats
@@ -477,7 +477,7 @@ function nsetup(){
             </div>
             <button name="nsetup" type="submit" class="btn btn-primary">Ajouter</button>
             <?php
-            require('connect.php');
+            require('function/connect.php');
             if (isset($_POST['nsetup'])){
                 if(empty($_POST['post_ord']) || empty($_POST['post_sou']) || empty($_POST['post_cla']) || empty($_POST['post_ecran'])){
                     print('</section><div class="alert alert-danger">

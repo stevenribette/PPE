@@ -1,6 +1,6 @@
 <?php
 function profil (){
-    require ("connect.php");
+    require ("function/connect.php");
     $result = mysqli_query($db, 'SELECT us_identifiant FROM user_connect where us_id ='.$_SESSION['login'].' ');
     while ($Row = mysqli_fetch_array($result)) {
         $identifiant = $Row[0];
@@ -33,7 +33,7 @@ function profil (){
         </div>
     </div>
     <div class="col-sm-4">');
-    print('<form id="upload" action="stocker.php" method="post" enctype="multipart/form-data">');
+    print('<form id="upload" action="function/stocker.php" method="post" enctype="multipart/form-data">');
     print('<button class="btn btn-secondary" type="button" data-target="#Monnelement" data-toggle="collapse" aria-expanded="false" aria-controls="MonCollapse">');
     if(empty($fichier))
     {

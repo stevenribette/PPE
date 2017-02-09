@@ -29,5 +29,14 @@
         </div>
     </div>
 </div>
+<nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+        <div class="navbar-header" id="navbar">
+            <a class="navbar-brand" href="https://github.com/stevenribette/PPE">Crée par Steven Ribette, Quentin Jost, Antoine Gudolle et Yann Gbedo</a>
+        </div>
+        <ul class="nav navbar-nav">
+        </ul>
+    </div>
+</nav>
 </body>
 </html>

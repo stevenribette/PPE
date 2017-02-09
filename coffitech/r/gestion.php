@@ -11,11 +11,12 @@
 <body>
     <?php
     require ("stockage.php");
-    /*
     require ("client.php");
     require ("personnel.php");
     require ("fournisseur.php");
-    */
+    require ("produit.php");
+    require ("document.php");
+
     require ("function/navbar.php");
     navbar();
 
@@ -28,14 +29,18 @@
     else if(isset($_GET['personnel'])){
         personnel();
     }
-    else if(isset($_GET['fournisseurs'])){
+    else if(isset($_GET['fournisseur'])){
         fournisseur();
     }else if(isset($_GET['personnel'])){
         personnel();
     }else if(isset($_GET['produit'])){
         produit();
-    }else if(isset($_GET['document'])){
-        document();
+    }else if(isset($_GET['devis'])){
+        document("devis");
+    }else if(isset($_GET['commande'])){
+        document("commandes");
+    }else if(isset($_GET['factures'])){
+        document("facture");
     }else{
     ?>
         <div class="container">

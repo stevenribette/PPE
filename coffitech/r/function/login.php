@@ -3,9 +3,9 @@ function login()
             {
                 $page = $_SERVER['PHP_SELF'];
                 if ($page == '/PPE/coffitech/index.php') {
-                    require("r/connect.php");
+                    require("r/function/connect.php");
                 } else {
-                    require("connect.php");
+                    require("function/connect.php");
                 }
                 session_start();
                 $MesErreur = "";
