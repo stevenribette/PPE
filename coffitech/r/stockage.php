@@ -246,61 +246,28 @@ function listesetup(){
         $modutil = '<a href="gestion.php?stockage&amp;modutilsetup=' . $Row[0] . '" >Utiliser</a>';
         $moddispo = '<a href="gestion.php?stockage&amp;moddisposetup=' . $Row[0] . '" >Disponible</a>';
         $modhs = '<a href="gestion.php?stockage&amp;modhssetup=' . $Row[0] . '" >Hors-service</a>';
-        $req1 = 'SELECT ord_libelle, ord_code, ord_marque FROM ordinateur WHERE ord_id = "' . $Row[2] . '"';
-        $req2 = 'SELECT sou_libelle, sou_code, sou_marque FROM souris WHERE sou_id = "' . $Row[3] . '"';
-        $req3 = 'SELECT cla_libelle, cla_code, cla_marque FROM clavier WHERE cla_id = "' . $Row[4] . '"';
-        $req4 = 'SELECT ecran_libelle, ecran_code, ecran_marque FROM ecran WHERE ecran_id = "' . $Row[5] . '"';
-        $res1 = mysqli_query($db, $req1);
-        $res2 = mysqli_query($db, $req2);
-        $res3 = mysqli_query($db, $req3);
-        $res4 = mysqli_query($db, $req4);
-        $ord_ver = mysqli_fetch_array($res1);
-        $sou_ver = mysqli_fetch_array($res2);
-        $cla_ver = mysqli_fetch_array($res3);
-        $ecran_ver = mysqli_fetch_array($res4);
+        print('<tr id=' . $Row[1] . '><td>' . $Row[1] . '</td>');
+        $materiel = array("ordinateur", "souris", "clavier", "ecran");
+        $base = array("ord", "sou", "cla", "ecran");
+        $i = 0;
+        while ($i < count($materiel)) {
+            $req = 'SELECT ' . $base[$i] . '_libelle, ' . $base[$i] . '_code, ' . $base[$i] . '_marque FROM ' . $materiel[$i] . ' WHERE ' . $base[$i] . '_id = "' . $Row[$i+2] . '"';
+            $res = mysqli_query($db, $req);
+            $ver = mysqli_fetch_array($res);
+            print('<td>
+            <div class="dropdown">
+              <button class="btn btn-info dropdown-toggle btn-xs btn-block" type="button" data-toggle="dropdown">' . $ver[0] . '
+                    <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a title="Code">' . $ver[1] . '</a></li>
+                <li><a title="Marque">' . $ver[2] . '</a></li>
+              </ul>
+            </div></td>');
+            $i++;
+        }
         //libération des ressources
-        mysqli_free_result($res1);
-        mysqli_free_result($res2);
-        mysqli_free_result($res3);
-        mysqli_free_result($res4);
-        print('<tr id=' . $Row[1] . '><td>' . $Row[1] . '</td><td>
-        <div class="dropdown">
-          <button class="btn btn-info dropdown-toggle btn-xs btn-block" type="button" data-toggle="dropdown">'. $ord_ver[0] .'
-                <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a title="Code">'. $ord_ver[1] .'</a></li>
-            <li><a title="Marque">'. $ord_ver[2] .'</a></li>
-          </ul>
-        </div>
-        </td><td>
-        <div class="dropdown">
-          <button class="btn btn-info dropdown-toggle btn-xs btn-block" type="button" data-toggle="dropdown">'. $sou_ver[0] .'
-                <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a title="Code">'. $sou_ver[1] .'</a></li>
-            <li><a title="Marque">'. $sou_ver[2] .'</a></li>
-          </ul>
-        </div>
-        </td><td>
-        <div class="dropdown">
-          <button class="btn btn-info dropdown-toggle btn-xs btn-block" type="button" data-toggle="dropdown">'. $cla_ver[0] .'
-                <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a title="Code">'. $cla_ver[1] .'</a></li>
-            <li><a title="Marque">'. $cla_ver[2] .'</a></li>
-          </ul>
-        </div>
-        </td><td>
-        <div class="dropdown">
-          <button class="btn btn-info dropdown-toggle btn-xs btn-block" type="button" data-toggle="dropdown">'. $ecran_ver[0] .'
-                <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a title="Code">'. $ecran_ver[1] .'</a></li>
-            <li><a title="Marque">'. $ecran_ver[2] .'</a></li>
-          </ul>
-        </div>
-        </td><td>
-        <div class="dropdown">
+        mysqli_free_result($res);
+        print('<td><div class="dropdown">
           <button class="btn btn-info dropdown-toggle btn-xs btn-block" type="button" data-toggle="dropdown">'. $Row[6] .'
                 <span class="caret"></span></button>
           <ul class="dropdown-menu">

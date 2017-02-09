@@ -66,96 +66,100 @@
       <file leaf-file-name="stockage.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/r/stockage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="244" column="118" selection-start-line="244" selection-start-column="118" selection-end-line="244" selection-end-column="118" />
+            <state relative-caret-position="792">
+              <caret line="297" column="39" selection-start-line="297" selection-start-column="39" selection-end-line="297" selection-end-column="39" />
               <folding>
-                <marker date="1486645478217" expanded="true" signature="890:919" ph="SELECT ord_c... ${$vertype}" />
-                <marker date="1486645478217" expanded="true" signature="890:942" ph="SELECT ord_i... ordinateur" />
-                <marker date="1486645478217" expanded="true" signature="890:943" ph="SELECT ord_i... ordinateur" />
-                <marker date="1486645478217" expanded="true" signature="890:961" ph="SELECT ord_i... ordinateur" />
-                <marker date="1486645478217" expanded="true" signature="890:963" ph="SELECT ord_i... ordinateur" />
-                <marker date="1486645478217" expanded="true" signature="1000:1025" ph="SELECT sou_i... sou" />
-                <marker date="1486645478217" expanded="true" signature="1000:1048" ph="SELECT sou_i... souris" />
-                <marker date="1486645478217" expanded="true" signature="1000:1049" ph="SELECT sou_i... souris" />
-                <marker date="1486645478217" expanded="true" signature="1000:1067" ph="SELECT sou_i... souris" />
-                <marker date="1486645478217" expanded="true" signature="1106:1132" ph="SELECT cla_i... WHERE" />
-                <marker date="1486645478217" expanded="true" signature="1106:1155" ph="SELECT cla_i... clavier" />
-                <marker date="1486645478217" expanded="true" signature="1106:1156" ph="SELECT cla_i... clavier" />
-                <marker date="1486645478217" expanded="true" signature="1106:1174" ph="SELECT cla_i... clavier" />
-                <marker date="1486645478217" expanded="true" signature="1215:1241" ph="SELECT ecran... ordinateur" />
-                <marker date="1486645478217" expanded="true" signature="1215:1266" ph="SELECT ecran... ecran" />
-                <marker date="1486645478217" expanded="true" signature="1215:1267" ph="SELECT ecran... ecran" />
-                <marker date="1486645478217" expanded="true" signature="1215:1285" ph="SELECT ecran... ecran" />
-                <marker date="1486645478217" expanded="true" signature="2397:2567" ph="..." />
-                <marker date="1486645478217" expanded="true" signature="2816:2946" ph="..." />
-                <marker date="1486645478217" expanded="true" signature="3835:3848" ph="SELECT * FRO... " />
-                <marker date="1486645478217" expanded="true" signature="3835:3849" ph="SELECT * FRO... ordinateur" />
-                <marker date="1486645478217" expanded="true" signature="3835:3868" ph="SELECT * FRO... " />
-                <marker date="1486645478217" expanded="true" signature="4124:4299" ph="..." />
-                <marker date="1486645478217" expanded="true" signature="4147:4299" ph="..." />
-                <marker date="1486645478217" expanded="true" signature="4325:5798" ph="..." />
-                <marker date="1486645478217" expanded="true" signature="4362:5729" ph="..." />
-                <marker date="1486645478217" expanded="true" signature="4734:5715" ph="..." />
-                <marker date="1486645478217" expanded="true" signature="4814:4832" ph="..." />
-                <marker date="1486645478217" expanded="true" signature="4814:4933" ph="..." />
-                <marker date="1486645478217" expanded="true" signature="4814:5696" ph="..." />
-                <marker date="1486645478217" expanded="true" signature="5085:5154" ph="UPDATE ordin... " />
-                <marker date="1486645478217" expanded="true" signature="5085:5236" ph="UPDATE ordin... " />
-                <marker date="1486645478217" expanded="true" signature="5492:5621" ph="..." />
-                <marker date="1486645478217" expanded="true" signature="5882:5935" ph="DELETE FROM " />
-                <marker date="1486645478217" expanded="true" signature="8359:8391" ph="select '.${$... " />
-                <marker date="1486645478217" expanded="true" signature="8359:8435" ph="select from membre" />
-                <marker date="1486645478217" expanded="true" signature="8359:8438" ph="select '.${$... " />
-                <marker date="1486645478217" expanded="true" signature="8359:8456" ph="select from membre" />
-                <marker date="1486645478217" expanded="true" signature="8732:8783" ph="SELECT MAX('... " />
-                <marker date="1486645478217" expanded="true" signature="9090:9102" ph="INSERT INTO ${$vertype}... " />
-                <marker date="1486645478217" expanded="true" signature="9090:9122" ph="INSERT INTO ${$vertype}... " />
-                <marker date="1486645478217" expanded="true" signature="9090:9123" ph="INSERT INTO ${$vertype}... " />
-                <marker date="1486645478217" expanded="true" signature="9090:9147" ph="INSERT INTO ${$vertype}... " />
-                <marker date="1486645478217" expanded="true" signature="9090:9148" ph="INSERT INTO ${$vertype}... " />
-                <marker date="1486645478217" expanded="true" signature="9090:9192" ph="INSERT INTO ${$vertype}... " />
-                <marker date="1486645478217" expanded="true" signature="9090:9194" ph="INSERT INTO ${$vertype}... " />
-                <marker date="1486645478217" expanded="true" signature="9090:9195" ph="INSERT INTO " />
-                <marker date="1486645478217" expanded="true" signature="9090:9229" ph="INSERT INTO ${$vertype}... " />
-                <marker date="1486645478217" expanded="true" signature="9090:9254" ph="INSERT INTO ${$vertype}... " />
-                <marker date="1486645478217" expanded="true" signature="9090:9255" ph="INSERT INTO ${$vertype}... " />
-                <marker date="1486645478217" expanded="true" signature="9090:9281" ph="INSERT INTO ${$vertype}... " />
-                <marker date="1486645478217" expanded="true" signature="9090:9282" ph="INSERT INTO ${$vertype}... " />
-                <marker date="1486645478217" expanded="true" signature="9090:9327" ph="INSERT INTO ${$vertype}... " />
-                <marker date="1486645478217" expanded="true" signature="9493:9623" ph="..." />
-                <marker date="1486645478217" expanded="true" signature="9721:9847" ph="..." />
-                <marker date="1486645478217" expanded="true" signature="9953:10069" ph="..." />
-                <marker date="1486645478217" expanded="true" signature="10177:10306" ph="..." />
-                <marker date="1486645478217" expanded="true" signature="10877:10896" ph="SELECT * FRO... setup" />
-                <marker date="1486645478217" expanded="true" signature="11432:11505" ph="SELECT ord_c... ordinateur" />
-                <marker date="1486645478217" expanded="true" signature="11432:11521" ph="SELECT ord_c... ordinateur" />
-                <marker date="1486645478217" expanded="true" signature="11541:11626" ph="SELECT sou_c... souris" />
-                <marker date="1486645478217" expanded="true" signature="11646:11716" ph="SELECT cla_c... clavier" />
-                <marker date="1486645478217" expanded="true" signature="11646:11732" ph="SELECT cla_c... clavier" />
-                <marker date="1486645478217" expanded="true" signature="11752:11844" ph="SELECT ecran... ecran" />
-                <marker date="1486645478217" expanded="true" signature="14749:14780" ph="UPDATE setup... " />
-                <marker date="1486645478217" expanded="true" signature="14749:14816" ph="UPDATE setup... " />
-                <marker date="1486645478217" expanded="true" signature="14749:14817" ph="UPDATE setup... " />
-                <marker date="1486645478217" expanded="true" signature="14749:14841" ph="UPDATE setup... " />
-                <marker date="1486645478217" expanded="true" signature="15032:15102" ph="UPDATE setup... " />
-                <marker date="1486645478217" expanded="true" signature="15315:15387" ph="UPDATE setup... " />
-                <marker date="1486645478217" expanded="true" signature="15597:15630" ph="DELETE FROM " />
-                <marker date="1486645478217" expanded="true" signature="16656:16783" ph="SELECT ord_i... ordinateur" />
-                <marker date="1486645478217" expanded="true" signature="16721:16782" ph="SELECT null setup" />
-                <marker date="1486645478217" expanded="true" signature="17345:17464" ph="SELECT sou_i... souris" />
-                <marker date="1486645478217" expanded="true" signature="17406:17463" ph="SELECT null setup" />
-                <marker date="1486645478217" expanded="true" signature="18071:18192" ph="SELECT cla_i... clavier" />
-                <marker date="1486645478217" expanded="true" signature="18133:18191" ph="SELECT null setup" />
-                <marker date="1486645478217" expanded="true" signature="18799:18924" ph="SELECT ecran... ecran" />
-                <marker date="1486645478217" expanded="true" signature="18863:18923" ph="SELECT null setup" />
-                <marker date="1486645478217" expanded="true" signature="19600:19782" ph="..." />
-                <marker date="1486645478217" expanded="true" signature="19841:19916" ph="SELECT ord_i... ordinateur" />
-                <marker date="1486645478217" expanded="true" signature="19948:20019" ph="SELECT sou_i... souris" />
-                <marker date="1486645478217" expanded="true" signature="20051:20123" ph="SELECT cla_i... clavier" />
-                <marker date="1486645478217" expanded="true" signature="20155:20231" ph="SELECT ecran... ecran" />
-                <marker date="1486645478217" expanded="true" signature="20948:20979" ph="SELECT MAX(s... setup" />
-                <marker date="1486645478217" expanded="true" signature="21286:21508" ph="INSERT INTO setup... " />
-                <marker date="1486645478217" expanded="true" signature="21727:21854" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="890:919" ph="SELECT ord_c... ${$vertype}" />
+                <marker date="1486647765165" expanded="true" signature="890:942" ph="SELECT ord_i... ordinateur" />
+                <marker date="1486647765165" expanded="true" signature="890:943" ph="SELECT ord_i... ordinateur" />
+                <marker date="1486647765165" expanded="true" signature="890:961" ph="SELECT ord_i... ordinateur" />
+                <marker date="1486647765165" expanded="true" signature="890:963" ph="SELECT ord_i... ordinateur" />
+                <marker date="1486647765165" expanded="true" signature="1000:1025" ph="SELECT sou_i... sou" />
+                <marker date="1486647765165" expanded="true" signature="1000:1048" ph="SELECT sou_i... souris" />
+                <marker date="1486647765165" expanded="true" signature="1000:1049" ph="SELECT sou_i... souris" />
+                <marker date="1486647765165" expanded="true" signature="1000:1067" ph="SELECT sou_i... souris" />
+                <marker date="1486647765165" expanded="true" signature="1106:1132" ph="SELECT cla_i... WHERE" />
+                <marker date="1486647765165" expanded="true" signature="1106:1155" ph="SELECT cla_i... clavier" />
+                <marker date="1486647765165" expanded="true" signature="1106:1156" ph="SELECT cla_i... clavier" />
+                <marker date="1486647765165" expanded="true" signature="1106:1174" ph="SELECT cla_i... clavier" />
+                <marker date="1486647765165" expanded="true" signature="1215:1241" ph="SELECT ecran... ordinateur" />
+                <marker date="1486647765165" expanded="true" signature="1215:1266" ph="SELECT ecran... ecran" />
+                <marker date="1486647765165" expanded="true" signature="1215:1267" ph="SELECT ecran... ecran" />
+                <marker date="1486647765165" expanded="true" signature="1215:1285" ph="SELECT ecran... ecran" />
+                <marker date="1486647765165" expanded="true" signature="2397:2567" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="2816:2946" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="3835:3848" ph="SELECT * FRO... " />
+                <marker date="1486647765165" expanded="true" signature="3835:3849" ph="SELECT * FRO... ordinateur" />
+                <marker date="1486647765165" expanded="true" signature="3835:3868" ph="SELECT * FRO... " />
+                <marker date="1486647765165" expanded="true" signature="4124:4299" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="4147:4299" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="4325:5798" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="4362:5729" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="4734:5715" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="4814:4832" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="4814:4933" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="4814:5696" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="5085:5154" ph="UPDATE ordin... " />
+                <marker date="1486647765165" expanded="true" signature="5085:5236" ph="UPDATE ordin... " />
+                <marker date="1486647765165" expanded="true" signature="5492:5621" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="5882:5935" ph="DELETE FROM " />
+                <marker date="1486647765165" expanded="true" signature="8359:8391" ph="select '.${$... " />
+                <marker date="1486647765165" expanded="true" signature="8359:8435" ph="select from membre" />
+                <marker date="1486647765165" expanded="true" signature="8359:8438" ph="select '.${$... " />
+                <marker date="1486647765165" expanded="true" signature="8359:8456" ph="select from membre" />
+                <marker date="1486647765165" expanded="true" signature="8732:8783" ph="SELECT MAX('... " />
+                <marker date="1486647765165" expanded="true" signature="9090:9102" ph="INSERT INTO ${$vertype}... " />
+                <marker date="1486647765165" expanded="true" signature="9090:9122" ph="INSERT INTO ${$vertype}... " />
+                <marker date="1486647765165" expanded="true" signature="9090:9123" ph="INSERT INTO ${$vertype}... " />
+                <marker date="1486647765165" expanded="true" signature="9090:9147" ph="INSERT INTO ${$vertype}... " />
+                <marker date="1486647765165" expanded="true" signature="9090:9148" ph="INSERT INTO ${$vertype}... " />
+                <marker date="1486647765165" expanded="true" signature="9090:9192" ph="INSERT INTO ${$vertype}... " />
+                <marker date="1486647765165" expanded="true" signature="9090:9194" ph="INSERT INTO ${$vertype}... " />
+                <marker date="1486647765165" expanded="true" signature="9090:9195" ph="INSERT INTO " />
+                <marker date="1486647765165" expanded="true" signature="9090:9229" ph="INSERT INTO ${$vertype}... " />
+                <marker date="1486647765165" expanded="true" signature="9090:9254" ph="INSERT INTO ${$vertype}... " />
+                <marker date="1486647765165" expanded="true" signature="9090:9255" ph="INSERT INTO ${$vertype}... " />
+                <marker date="1486647765165" expanded="true" signature="9090:9281" ph="INSERT INTO ${$vertype}... " />
+                <marker date="1486647765165" expanded="true" signature="9090:9282" ph="INSERT INTO ${$vertype}... " />
+                <marker date="1486647765165" expanded="true" signature="9090:9327" ph="INSERT INTO ${$vertype}... " />
+                <marker date="1486647765165" expanded="true" signature="9493:9623" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="9721:9847" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="9953:10069" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="10177:10306" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="10877:10896" ph="SELECT * FRO... setup" />
+                <marker date="1486647765165" expanded="true" signature="11681:11821" ph="SELECT ord_c... ordinateur" />
+                <marker date="1486647765165" expanded="true" signature="11681:11840" ph="SELECT ord_c... ordinateur" />
+                <marker date="1486647765165" expanded="true" signature="11954:12384" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="11989:12379" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="12103:12175" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="12216:12360" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="12505:13036" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="12527:13022" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="12637:12703" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="12740:13007" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="13129:13160" ph="UPDATE setup... " />
+                <marker date="1486647765165" expanded="true" signature="13129:13196" ph="UPDATE setup... " />
+                <marker date="1486647765165" expanded="true" signature="13129:13197" ph="UPDATE setup... " />
+                <marker date="1486647765165" expanded="true" signature="13129:13221" ph="UPDATE setup... " />
+                <marker date="1486647765165" expanded="true" signature="13412:13482" ph="UPDATE setup... " />
+                <marker date="1486647765165" expanded="true" signature="13695:13767" ph="UPDATE setup... " />
+                <marker date="1486647765165" expanded="true" signature="13977:14010" ph="DELETE FROM " />
+                <marker date="1486647765165" expanded="true" signature="15036:15163" ph="SELECT ord_i... ordinateur" />
+                <marker date="1486647765165" expanded="true" signature="15101:15162" ph="SELECT null setup" />
+                <marker date="1486647765165" expanded="true" signature="15725:15844" ph="SELECT sou_i... souris" />
+                <marker date="1486647765165" expanded="true" signature="15786:15843" ph="SELECT null setup" />
+                <marker date="1486647765165" expanded="true" signature="16451:16572" ph="SELECT cla_i... clavier" />
+                <marker date="1486647765165" expanded="true" signature="16513:16571" ph="SELECT null setup" />
+                <marker date="1486647765165" expanded="true" signature="17179:17304" ph="SELECT ecran... ecran" />
+                <marker date="1486647765165" expanded="true" signature="17243:17303" ph="SELECT null setup" />
+                <marker date="1486647765165" expanded="true" signature="17980:18162" ph="..." />
+                <marker date="1486647765165" expanded="true" signature="18221:18296" ph="SELECT ord_i... ordinateur" />
+                <marker date="1486647765165" expanded="true" signature="18328:18399" ph="SELECT sou_i... souris" />
+                <marker date="1486647765165" expanded="true" signature="18431:18503" ph="SELECT cla_i... clavier" />
+                <marker date="1486647765165" expanded="true" signature="18535:18611" ph="SELECT ecran... ecran" />
+                <marker date="1486647765165" expanded="true" signature="19328:19359" ph="SELECT MAX(s... setup" />
+                <marker date="1486647765165" expanded="true" signature="19666:19888" ph="INSERT INTO setup... " />
+                <marker date="1486647765165" expanded="true" signature="20107:20234" ph="..." />
               </folding>
             </state>
           </provider>
@@ -426,15 +430,15 @@
       <workItem from="1486541384709" duration="18607000" />
       <workItem from="1486594503536" duration="221000" />
       <workItem from="1486594930242" duration="2991000" />
-      <workItem from="1486627799921" duration="13887000" />
+      <workItem from="1486627799921" duration="16164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108649000" />
+    <option name="totallyTimeSpent" value="110926000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1060" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -493,93 +497,97 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1486645478217" expanded="true" signature="890:919" ph="SELECT ord_c... ${$vertype}" />
-            <marker date="1486645478217" expanded="true" signature="890:942" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:943" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:961" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:963" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="1000:1025" ph="SELECT sou_i... sou" />
-            <marker date="1486645478217" expanded="true" signature="1000:1048" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1000:1049" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1000:1067" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1106:1132" ph="SELECT cla_i... WHERE" />
-            <marker date="1486645478217" expanded="true" signature="1106:1155" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1106:1156" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1106:1174" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1215:1241" ph="SELECT ecran... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="1215:1266" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="1215:1267" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="1215:1285" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="2397:2567" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="2816:2946" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="3835:3848" ph="SELECT * FRO... " />
-            <marker date="1486645478217" expanded="true" signature="3835:3849" ph="SELECT * FRO... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="3835:3868" ph="SELECT * FRO... " />
-            <marker date="1486645478217" expanded="true" signature="4124:4299" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4147:4299" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4325:5798" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4362:5729" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4734:5715" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:4832" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:4933" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:5696" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="5085:5154" ph="UPDATE ordin... " />
-            <marker date="1486645478217" expanded="true" signature="5085:5236" ph="UPDATE ordin... " />
-            <marker date="1486645478217" expanded="true" signature="5492:5621" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="5882:5935" ph="DELETE FROM " />
-            <marker date="1486645478217" expanded="true" signature="8359:8391" ph="select '.${$... " />
-            <marker date="1486645478217" expanded="true" signature="8359:8435" ph="select from membre" />
-            <marker date="1486645478217" expanded="true" signature="8359:8438" ph="select '.${$... " />
-            <marker date="1486645478217" expanded="true" signature="8359:8456" ph="select from membre" />
-            <marker date="1486645478217" expanded="true" signature="8732:8783" ph="SELECT MAX('... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9102" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9122" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9123" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9147" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9148" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9192" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9194" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9195" ph="INSERT INTO " />
-            <marker date="1486645478217" expanded="true" signature="9090:9229" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9254" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9255" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9281" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9282" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9327" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9493:9623" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="9721:9847" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="9953:10069" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="10177:10306" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="10877:10896" ph="SELECT * FRO... setup" />
-            <marker date="1486645478217" expanded="true" signature="11432:11505" ph="SELECT ord_c... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="11432:11521" ph="SELECT ord_c... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="11541:11626" ph="SELECT sou_c... souris" />
-            <marker date="1486645478217" expanded="true" signature="11646:11716" ph="SELECT cla_c... clavier" />
-            <marker date="1486645478217" expanded="true" signature="11646:11732" ph="SELECT cla_c... clavier" />
-            <marker date="1486645478217" expanded="true" signature="11752:11844" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="14749:14780" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14816" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14817" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14841" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15032:15102" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15315:15387" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15597:15630" ph="DELETE FROM " />
-            <marker date="1486645478217" expanded="true" signature="16656:16783" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="16721:16782" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="17345:17464" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="17406:17463" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="18071:18192" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="18133:18191" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="18799:18924" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="18863:18923" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="19600:19782" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="19841:19916" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="19948:20019" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="20051:20123" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="20155:20231" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="20948:20979" ph="SELECT MAX(s... setup" />
-            <marker date="1486645478217" expanded="true" signature="21286:21508" ph="INSERT INTO setup... " />
-            <marker date="1486645478217" expanded="true" signature="21727:21854" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="890:919" ph="SELECT ord_c... ${$vertype}" />
+            <marker date="1486647765165" expanded="true" signature="890:942" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:943" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:961" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:963" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="1000:1025" ph="SELECT sou_i... sou" />
+            <marker date="1486647765165" expanded="true" signature="1000:1048" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1000:1049" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1000:1067" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1106:1132" ph="SELECT cla_i... WHERE" />
+            <marker date="1486647765165" expanded="true" signature="1106:1155" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1106:1156" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1106:1174" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1215:1241" ph="SELECT ecran... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="1215:1266" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="1215:1267" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="1215:1285" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="2397:2567" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="2816:2946" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="3835:3848" ph="SELECT * FRO... " />
+            <marker date="1486647765165" expanded="true" signature="3835:3849" ph="SELECT * FRO... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="3835:3868" ph="SELECT * FRO... " />
+            <marker date="1486647765165" expanded="true" signature="4124:4299" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4147:4299" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4325:5798" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4362:5729" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4734:5715" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:4832" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:4933" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:5696" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="5085:5154" ph="UPDATE ordin... " />
+            <marker date="1486647765165" expanded="true" signature="5085:5236" ph="UPDATE ordin... " />
+            <marker date="1486647765165" expanded="true" signature="5492:5621" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="5882:5935" ph="DELETE FROM " />
+            <marker date="1486647765165" expanded="true" signature="8359:8391" ph="select '.${$... " />
+            <marker date="1486647765165" expanded="true" signature="8359:8435" ph="select from membre" />
+            <marker date="1486647765165" expanded="true" signature="8359:8438" ph="select '.${$... " />
+            <marker date="1486647765165" expanded="true" signature="8359:8456" ph="select from membre" />
+            <marker date="1486647765165" expanded="true" signature="8732:8783" ph="SELECT MAX('... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9102" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9122" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9123" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9147" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9148" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9192" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9194" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9195" ph="INSERT INTO " />
+            <marker date="1486647765165" expanded="true" signature="9090:9229" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9254" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9255" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9281" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9282" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9327" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9493:9623" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="9721:9847" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="9953:10069" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="10177:10306" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="10877:10896" ph="SELECT * FRO... setup" />
+            <marker date="1486647765165" expanded="true" signature="11681:11821" ph="SELECT ord_c... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="11681:11840" ph="SELECT ord_c... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="11954:12384" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="11989:12379" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12103:12175" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12216:12360" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12505:13036" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12527:13022" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12637:12703" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12740:13007" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="13129:13160" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13196" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13197" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13221" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13412:13482" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13695:13767" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13977:14010" ph="DELETE FROM " />
+            <marker date="1486647765165" expanded="true" signature="15036:15163" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="15101:15162" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="15725:15844" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="15786:15843" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="16451:16572" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="16513:16571" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="17179:17304" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="17243:17303" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="17980:18162" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="18221:18296" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="18328:18399" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="18431:18503" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="18535:18611" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="19328:19359" ph="SELECT MAX(s... setup" />
+            <marker date="1486647765165" expanded="true" signature="19666:19888" ph="INSERT INTO setup... " />
+            <marker date="1486647765165" expanded="true" signature="20107:20234" ph="..." />
           </folding>
         </state>
       </provider>
@@ -633,93 +641,97 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1486645478217" expanded="true" signature="890:919" ph="SELECT ord_c... ${$vertype}" />
-            <marker date="1486645478217" expanded="true" signature="890:942" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:943" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:961" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:963" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="1000:1025" ph="SELECT sou_i... sou" />
-            <marker date="1486645478217" expanded="true" signature="1000:1048" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1000:1049" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1000:1067" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1106:1132" ph="SELECT cla_i... WHERE" />
-            <marker date="1486645478217" expanded="true" signature="1106:1155" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1106:1156" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1106:1174" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1215:1241" ph="SELECT ecran... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="1215:1266" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="1215:1267" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="1215:1285" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="2397:2567" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="2816:2946" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="3835:3848" ph="SELECT * FRO... " />
-            <marker date="1486645478217" expanded="true" signature="3835:3849" ph="SELECT * FRO... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="3835:3868" ph="SELECT * FRO... " />
-            <marker date="1486645478217" expanded="true" signature="4124:4299" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4147:4299" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4325:5798" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4362:5729" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4734:5715" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:4832" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:4933" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:5696" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="5085:5154" ph="UPDATE ordin... " />
-            <marker date="1486645478217" expanded="true" signature="5085:5236" ph="UPDATE ordin... " />
-            <marker date="1486645478217" expanded="true" signature="5492:5621" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="5882:5935" ph="DELETE FROM " />
-            <marker date="1486645478217" expanded="true" signature="8359:8391" ph="select '.${$... " />
-            <marker date="1486645478217" expanded="true" signature="8359:8435" ph="select from membre" />
-            <marker date="1486645478217" expanded="true" signature="8359:8438" ph="select '.${$... " />
-            <marker date="1486645478217" expanded="true" signature="8359:8456" ph="select from membre" />
-            <marker date="1486645478217" expanded="true" signature="8732:8783" ph="SELECT MAX('... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9102" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9122" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9123" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9147" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9148" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9192" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9194" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9195" ph="INSERT INTO " />
-            <marker date="1486645478217" expanded="true" signature="9090:9229" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9254" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9255" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9281" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9282" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9327" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9493:9623" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="9721:9847" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="9953:10069" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="10177:10306" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="10877:10896" ph="SELECT * FRO... setup" />
-            <marker date="1486645478217" expanded="true" signature="11432:11505" ph="SELECT ord_c... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="11432:11521" ph="SELECT ord_c... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="11541:11626" ph="SELECT sou_c... souris" />
-            <marker date="1486645478217" expanded="true" signature="11646:11716" ph="SELECT cla_c... clavier" />
-            <marker date="1486645478217" expanded="true" signature="11646:11732" ph="SELECT cla_c... clavier" />
-            <marker date="1486645478217" expanded="true" signature="11752:11844" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="14749:14780" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14816" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14817" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14841" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15032:15102" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15315:15387" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15597:15630" ph="DELETE FROM " />
-            <marker date="1486645478217" expanded="true" signature="16656:16783" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="16721:16782" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="17345:17464" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="17406:17463" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="18071:18192" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="18133:18191" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="18799:18924" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="18863:18923" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="19600:19782" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="19841:19916" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="19948:20019" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="20051:20123" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="20155:20231" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="20948:20979" ph="SELECT MAX(s... setup" />
-            <marker date="1486645478217" expanded="true" signature="21286:21508" ph="INSERT INTO setup... " />
-            <marker date="1486645478217" expanded="true" signature="21727:21854" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="890:919" ph="SELECT ord_c... ${$vertype}" />
+            <marker date="1486647765165" expanded="true" signature="890:942" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:943" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:961" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:963" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="1000:1025" ph="SELECT sou_i... sou" />
+            <marker date="1486647765165" expanded="true" signature="1000:1048" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1000:1049" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1000:1067" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1106:1132" ph="SELECT cla_i... WHERE" />
+            <marker date="1486647765165" expanded="true" signature="1106:1155" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1106:1156" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1106:1174" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1215:1241" ph="SELECT ecran... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="1215:1266" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="1215:1267" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="1215:1285" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="2397:2567" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="2816:2946" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="3835:3848" ph="SELECT * FRO... " />
+            <marker date="1486647765165" expanded="true" signature="3835:3849" ph="SELECT * FRO... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="3835:3868" ph="SELECT * FRO... " />
+            <marker date="1486647765165" expanded="true" signature="4124:4299" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4147:4299" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4325:5798" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4362:5729" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4734:5715" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:4832" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:4933" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:5696" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="5085:5154" ph="UPDATE ordin... " />
+            <marker date="1486647765165" expanded="true" signature="5085:5236" ph="UPDATE ordin... " />
+            <marker date="1486647765165" expanded="true" signature="5492:5621" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="5882:5935" ph="DELETE FROM " />
+            <marker date="1486647765165" expanded="true" signature="8359:8391" ph="select '.${$... " />
+            <marker date="1486647765165" expanded="true" signature="8359:8435" ph="select from membre" />
+            <marker date="1486647765165" expanded="true" signature="8359:8438" ph="select '.${$... " />
+            <marker date="1486647765165" expanded="true" signature="8359:8456" ph="select from membre" />
+            <marker date="1486647765165" expanded="true" signature="8732:8783" ph="SELECT MAX('... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9102" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9122" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9123" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9147" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9148" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9192" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9194" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9195" ph="INSERT INTO " />
+            <marker date="1486647765165" expanded="true" signature="9090:9229" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9254" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9255" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9281" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9282" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9327" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9493:9623" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="9721:9847" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="9953:10069" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="10177:10306" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="10877:10896" ph="SELECT * FRO... setup" />
+            <marker date="1486647765165" expanded="true" signature="11681:11821" ph="SELECT ord_c... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="11681:11840" ph="SELECT ord_c... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="11954:12384" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="11989:12379" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12103:12175" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12216:12360" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12505:13036" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12527:13022" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12637:12703" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12740:13007" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="13129:13160" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13196" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13197" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13221" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13412:13482" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13695:13767" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13977:14010" ph="DELETE FROM " />
+            <marker date="1486647765165" expanded="true" signature="15036:15163" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="15101:15162" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="15725:15844" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="15786:15843" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="16451:16572" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="16513:16571" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="17179:17304" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="17243:17303" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="17980:18162" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="18221:18296" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="18328:18399" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="18431:18503" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="18535:18611" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="19328:19359" ph="SELECT MAX(s... setup" />
+            <marker date="1486647765165" expanded="true" signature="19666:19888" ph="INSERT INTO setup... " />
+            <marker date="1486647765165" expanded="true" signature="20107:20234" ph="..." />
           </folding>
         </state>
       </provider>
@@ -797,93 +809,97 @@
         <state relative-caret-position="88">
           <caret line="4" column="8" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="27" />
           <folding>
-            <marker date="1486645478217" expanded="true" signature="890:919" ph="SELECT ord_c... ${$vertype}" />
-            <marker date="1486645478217" expanded="true" signature="890:942" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:943" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:961" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:963" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="1000:1025" ph="SELECT sou_i... sou" />
-            <marker date="1486645478217" expanded="true" signature="1000:1048" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1000:1049" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1000:1067" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1106:1132" ph="SELECT cla_i... WHERE" />
-            <marker date="1486645478217" expanded="true" signature="1106:1155" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1106:1156" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1106:1174" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1215:1241" ph="SELECT ecran... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="1215:1266" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="1215:1267" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="1215:1285" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="2397:2567" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="2816:2946" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="3835:3848" ph="SELECT * FRO... " />
-            <marker date="1486645478217" expanded="true" signature="3835:3849" ph="SELECT * FRO... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="3835:3868" ph="SELECT * FRO... " />
-            <marker date="1486645478217" expanded="true" signature="4124:4299" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4147:4299" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4325:5798" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4362:5729" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4734:5715" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:4832" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:4933" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:5696" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="5085:5154" ph="UPDATE ordin... " />
-            <marker date="1486645478217" expanded="true" signature="5085:5236" ph="UPDATE ordin... " />
-            <marker date="1486645478217" expanded="true" signature="5492:5621" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="5882:5935" ph="DELETE FROM " />
-            <marker date="1486645478217" expanded="true" signature="8359:8391" ph="select '.${$... " />
-            <marker date="1486645478217" expanded="true" signature="8359:8435" ph="select from membre" />
-            <marker date="1486645478217" expanded="true" signature="8359:8438" ph="select '.${$... " />
-            <marker date="1486645478217" expanded="true" signature="8359:8456" ph="select from membre" />
-            <marker date="1486645478217" expanded="true" signature="8732:8783" ph="SELECT MAX('... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9102" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9122" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9123" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9147" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9148" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9192" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9194" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9195" ph="INSERT INTO " />
-            <marker date="1486645478217" expanded="true" signature="9090:9229" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9254" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9255" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9281" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9282" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9327" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9493:9623" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="9721:9847" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="9953:10069" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="10177:10306" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="10877:10896" ph="SELECT * FRO... setup" />
-            <marker date="1486645478217" expanded="true" signature="11432:11505" ph="SELECT ord_c... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="11432:11521" ph="SELECT ord_c... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="11541:11626" ph="SELECT sou_c... souris" />
-            <marker date="1486645478217" expanded="true" signature="11646:11716" ph="SELECT cla_c... clavier" />
-            <marker date="1486645478217" expanded="true" signature="11646:11732" ph="SELECT cla_c... clavier" />
-            <marker date="1486645478217" expanded="true" signature="11752:11844" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="14749:14780" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14816" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14817" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14841" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15032:15102" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15315:15387" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15597:15630" ph="DELETE FROM " />
-            <marker date="1486645478217" expanded="true" signature="16656:16783" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="16721:16782" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="17345:17464" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="17406:17463" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="18071:18192" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="18133:18191" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="18799:18924" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="18863:18923" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="19600:19782" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="19841:19916" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="19948:20019" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="20051:20123" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="20155:20231" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="20948:20979" ph="SELECT MAX(s... setup" />
-            <marker date="1486645478217" expanded="true" signature="21286:21508" ph="INSERT INTO setup... " />
-            <marker date="1486645478217" expanded="true" signature="21727:21854" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="890:919" ph="SELECT ord_c... ${$vertype}" />
+            <marker date="1486647765165" expanded="true" signature="890:942" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:943" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:961" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:963" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="1000:1025" ph="SELECT sou_i... sou" />
+            <marker date="1486647765165" expanded="true" signature="1000:1048" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1000:1049" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1000:1067" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1106:1132" ph="SELECT cla_i... WHERE" />
+            <marker date="1486647765165" expanded="true" signature="1106:1155" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1106:1156" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1106:1174" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1215:1241" ph="SELECT ecran... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="1215:1266" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="1215:1267" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="1215:1285" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="2397:2567" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="2816:2946" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="3835:3848" ph="SELECT * FRO... " />
+            <marker date="1486647765165" expanded="true" signature="3835:3849" ph="SELECT * FRO... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="3835:3868" ph="SELECT * FRO... " />
+            <marker date="1486647765165" expanded="true" signature="4124:4299" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4147:4299" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4325:5798" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4362:5729" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4734:5715" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:4832" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:4933" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:5696" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="5085:5154" ph="UPDATE ordin... " />
+            <marker date="1486647765165" expanded="true" signature="5085:5236" ph="UPDATE ordin... " />
+            <marker date="1486647765165" expanded="true" signature="5492:5621" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="5882:5935" ph="DELETE FROM " />
+            <marker date="1486647765165" expanded="true" signature="8359:8391" ph="select '.${$... " />
+            <marker date="1486647765165" expanded="true" signature="8359:8435" ph="select from membre" />
+            <marker date="1486647765165" expanded="true" signature="8359:8438" ph="select '.${$... " />
+            <marker date="1486647765165" expanded="true" signature="8359:8456" ph="select from membre" />
+            <marker date="1486647765165" expanded="true" signature="8732:8783" ph="SELECT MAX('... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9102" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9122" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9123" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9147" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9148" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9192" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9194" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9195" ph="INSERT INTO " />
+            <marker date="1486647765165" expanded="true" signature="9090:9229" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9254" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9255" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9281" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9282" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9327" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9493:9623" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="9721:9847" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="9953:10069" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="10177:10306" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="10877:10896" ph="SELECT * FRO... setup" />
+            <marker date="1486647765165" expanded="true" signature="11681:11821" ph="SELECT ord_c... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="11681:11840" ph="SELECT ord_c... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="11954:12384" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="11989:12379" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12103:12175" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12216:12360" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12505:13036" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12527:13022" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12637:12703" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12740:13007" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="13129:13160" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13196" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13197" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13221" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13412:13482" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13695:13767" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13977:14010" ph="DELETE FROM " />
+            <marker date="1486647765165" expanded="true" signature="15036:15163" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="15101:15162" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="15725:15844" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="15786:15843" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="16451:16572" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="16513:16571" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="17179:17304" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="17243:17303" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="17980:18162" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="18221:18296" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="18328:18399" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="18431:18503" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="18535:18611" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="19328:19359" ph="SELECT MAX(s... setup" />
+            <marker date="1486647765165" expanded="true" signature="19666:19888" ph="INSERT INTO setup... " />
+            <marker date="1486647765165" expanded="true" signature="20107:20234" ph="..." />
           </folding>
         </state>
       </provider>
@@ -944,93 +960,97 @@
         <state relative-caret-position="308">
           <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
           <folding>
-            <marker date="1486645478217" expanded="true" signature="890:919" ph="SELECT ord_c... ${$vertype}" />
-            <marker date="1486645478217" expanded="true" signature="890:942" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:943" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:961" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:963" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="1000:1025" ph="SELECT sou_i... sou" />
-            <marker date="1486645478217" expanded="true" signature="1000:1048" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1000:1049" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1000:1067" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1106:1132" ph="SELECT cla_i... WHERE" />
-            <marker date="1486645478217" expanded="true" signature="1106:1155" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1106:1156" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1106:1174" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1215:1241" ph="SELECT ecran... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="1215:1266" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="1215:1267" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="1215:1285" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="2397:2567" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="2816:2946" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="3835:3848" ph="SELECT * FRO... " />
-            <marker date="1486645478217" expanded="true" signature="3835:3849" ph="SELECT * FRO... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="3835:3868" ph="SELECT * FRO... " />
-            <marker date="1486645478217" expanded="true" signature="4124:4299" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4147:4299" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4325:5798" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4362:5729" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4734:5715" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:4832" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:4933" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:5696" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="5085:5154" ph="UPDATE ordin... " />
-            <marker date="1486645478217" expanded="true" signature="5085:5236" ph="UPDATE ordin... " />
-            <marker date="1486645478217" expanded="true" signature="5492:5621" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="5882:5935" ph="DELETE FROM " />
-            <marker date="1486645478217" expanded="true" signature="8359:8391" ph="select '.${$... " />
-            <marker date="1486645478217" expanded="true" signature="8359:8435" ph="select from membre" />
-            <marker date="1486645478217" expanded="true" signature="8359:8438" ph="select '.${$... " />
-            <marker date="1486645478217" expanded="true" signature="8359:8456" ph="select from membre" />
-            <marker date="1486645478217" expanded="true" signature="8732:8783" ph="SELECT MAX('... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9102" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9122" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9123" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9147" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9148" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9192" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9194" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9195" ph="INSERT INTO " />
-            <marker date="1486645478217" expanded="true" signature="9090:9229" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9254" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9255" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9281" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9282" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9327" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9493:9623" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="9721:9847" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="9953:10069" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="10177:10306" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="10877:10896" ph="SELECT * FRO... setup" />
-            <marker date="1486645478217" expanded="true" signature="11432:11505" ph="SELECT ord_c... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="11432:11521" ph="SELECT ord_c... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="11541:11626" ph="SELECT sou_c... souris" />
-            <marker date="1486645478217" expanded="true" signature="11646:11716" ph="SELECT cla_c... clavier" />
-            <marker date="1486645478217" expanded="true" signature="11646:11732" ph="SELECT cla_c... clavier" />
-            <marker date="1486645478217" expanded="true" signature="11752:11844" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="14749:14780" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14816" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14817" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14841" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15032:15102" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15315:15387" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15597:15630" ph="DELETE FROM " />
-            <marker date="1486645478217" expanded="true" signature="16656:16783" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="16721:16782" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="17345:17464" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="17406:17463" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="18071:18192" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="18133:18191" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="18799:18924" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="18863:18923" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="19600:19782" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="19841:19916" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="19948:20019" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="20051:20123" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="20155:20231" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="20948:20979" ph="SELECT MAX(s... setup" />
-            <marker date="1486645478217" expanded="true" signature="21286:21508" ph="INSERT INTO setup... " />
-            <marker date="1486645478217" expanded="true" signature="21727:21854" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="890:919" ph="SELECT ord_c... ${$vertype}" />
+            <marker date="1486647765165" expanded="true" signature="890:942" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:943" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:961" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:963" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="1000:1025" ph="SELECT sou_i... sou" />
+            <marker date="1486647765165" expanded="true" signature="1000:1048" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1000:1049" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1000:1067" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1106:1132" ph="SELECT cla_i... WHERE" />
+            <marker date="1486647765165" expanded="true" signature="1106:1155" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1106:1156" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1106:1174" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1215:1241" ph="SELECT ecran... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="1215:1266" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="1215:1267" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="1215:1285" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="2397:2567" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="2816:2946" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="3835:3848" ph="SELECT * FRO... " />
+            <marker date="1486647765165" expanded="true" signature="3835:3849" ph="SELECT * FRO... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="3835:3868" ph="SELECT * FRO... " />
+            <marker date="1486647765165" expanded="true" signature="4124:4299" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4147:4299" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4325:5798" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4362:5729" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4734:5715" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:4832" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:4933" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:5696" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="5085:5154" ph="UPDATE ordin... " />
+            <marker date="1486647765165" expanded="true" signature="5085:5236" ph="UPDATE ordin... " />
+            <marker date="1486647765165" expanded="true" signature="5492:5621" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="5882:5935" ph="DELETE FROM " />
+            <marker date="1486647765165" expanded="true" signature="8359:8391" ph="select '.${$... " />
+            <marker date="1486647765165" expanded="true" signature="8359:8435" ph="select from membre" />
+            <marker date="1486647765165" expanded="true" signature="8359:8438" ph="select '.${$... " />
+            <marker date="1486647765165" expanded="true" signature="8359:8456" ph="select from membre" />
+            <marker date="1486647765165" expanded="true" signature="8732:8783" ph="SELECT MAX('... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9102" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9122" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9123" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9147" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9148" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9192" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9194" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9195" ph="INSERT INTO " />
+            <marker date="1486647765165" expanded="true" signature="9090:9229" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9254" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9255" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9281" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9282" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9327" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9493:9623" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="9721:9847" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="9953:10069" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="10177:10306" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="10877:10896" ph="SELECT * FRO... setup" />
+            <marker date="1486647765165" expanded="true" signature="11681:11821" ph="SELECT ord_c... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="11681:11840" ph="SELECT ord_c... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="11954:12384" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="11989:12379" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12103:12175" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12216:12360" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12505:13036" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12527:13022" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12637:12703" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12740:13007" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="13129:13160" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13196" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13197" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13221" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13412:13482" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13695:13767" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13977:14010" ph="DELETE FROM " />
+            <marker date="1486647765165" expanded="true" signature="15036:15163" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="15101:15162" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="15725:15844" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="15786:15843" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="16451:16572" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="16513:16571" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="17179:17304" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="17243:17303" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="17980:18162" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="18221:18296" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="18328:18399" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="18431:18503" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="18535:18611" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="19328:19359" ph="SELECT MAX(s... setup" />
+            <marker date="1486647765165" expanded="true" signature="19666:19888" ph="INSERT INTO setup... " />
+            <marker date="1486647765165" expanded="true" signature="20107:20234" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1091,93 +1111,97 @@
         <state relative-caret-position="308">
           <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
           <folding>
-            <marker date="1486645478217" expanded="true" signature="890:919" ph="SELECT ord_c... ${$vertype}" />
-            <marker date="1486645478217" expanded="true" signature="890:942" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:943" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:961" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:963" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="1000:1025" ph="SELECT sou_i... sou" />
-            <marker date="1486645478217" expanded="true" signature="1000:1048" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1000:1049" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1000:1067" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1106:1132" ph="SELECT cla_i... WHERE" />
-            <marker date="1486645478217" expanded="true" signature="1106:1155" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1106:1156" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1106:1174" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1215:1241" ph="SELECT ecran... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="1215:1266" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="1215:1267" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="1215:1285" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="2397:2567" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="2816:2946" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="3835:3848" ph="SELECT * FRO... " />
-            <marker date="1486645478217" expanded="true" signature="3835:3849" ph="SELECT * FRO... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="3835:3868" ph="SELECT * FRO... " />
-            <marker date="1486645478217" expanded="true" signature="4124:4299" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4147:4299" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4325:5798" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4362:5729" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4734:5715" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:4832" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:4933" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:5696" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="5085:5154" ph="UPDATE ordin... " />
-            <marker date="1486645478217" expanded="true" signature="5085:5236" ph="UPDATE ordin... " />
-            <marker date="1486645478217" expanded="true" signature="5492:5621" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="5882:5935" ph="DELETE FROM " />
-            <marker date="1486645478217" expanded="true" signature="8359:8391" ph="select '.${$... " />
-            <marker date="1486645478217" expanded="true" signature="8359:8435" ph="select from membre" />
-            <marker date="1486645478217" expanded="true" signature="8359:8438" ph="select '.${$... " />
-            <marker date="1486645478217" expanded="true" signature="8359:8456" ph="select from membre" />
-            <marker date="1486645478217" expanded="true" signature="8732:8783" ph="SELECT MAX('... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9102" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9122" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9123" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9147" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9148" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9192" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9194" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9195" ph="INSERT INTO " />
-            <marker date="1486645478217" expanded="true" signature="9090:9229" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9254" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9255" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9281" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9282" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9327" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9493:9623" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="9721:9847" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="9953:10069" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="10177:10306" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="10877:10896" ph="SELECT * FRO... setup" />
-            <marker date="1486645478217" expanded="true" signature="11432:11505" ph="SELECT ord_c... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="11432:11521" ph="SELECT ord_c... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="11541:11626" ph="SELECT sou_c... souris" />
-            <marker date="1486645478217" expanded="true" signature="11646:11716" ph="SELECT cla_c... clavier" />
-            <marker date="1486645478217" expanded="true" signature="11646:11732" ph="SELECT cla_c... clavier" />
-            <marker date="1486645478217" expanded="true" signature="11752:11844" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="14749:14780" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14816" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14817" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14841" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15032:15102" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15315:15387" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15597:15630" ph="DELETE FROM " />
-            <marker date="1486645478217" expanded="true" signature="16656:16783" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="16721:16782" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="17345:17464" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="17406:17463" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="18071:18192" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="18133:18191" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="18799:18924" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="18863:18923" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="19600:19782" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="19841:19916" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="19948:20019" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="20051:20123" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="20155:20231" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="20948:20979" ph="SELECT MAX(s... setup" />
-            <marker date="1486645478217" expanded="true" signature="21286:21508" ph="INSERT INTO setup... " />
-            <marker date="1486645478217" expanded="true" signature="21727:21854" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="890:919" ph="SELECT ord_c... ${$vertype}" />
+            <marker date="1486647765165" expanded="true" signature="890:942" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:943" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:961" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:963" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="1000:1025" ph="SELECT sou_i... sou" />
+            <marker date="1486647765165" expanded="true" signature="1000:1048" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1000:1049" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1000:1067" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1106:1132" ph="SELECT cla_i... WHERE" />
+            <marker date="1486647765165" expanded="true" signature="1106:1155" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1106:1156" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1106:1174" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1215:1241" ph="SELECT ecran... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="1215:1266" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="1215:1267" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="1215:1285" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="2397:2567" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="2816:2946" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="3835:3848" ph="SELECT * FRO... " />
+            <marker date="1486647765165" expanded="true" signature="3835:3849" ph="SELECT * FRO... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="3835:3868" ph="SELECT * FRO... " />
+            <marker date="1486647765165" expanded="true" signature="4124:4299" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4147:4299" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4325:5798" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4362:5729" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4734:5715" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:4832" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:4933" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:5696" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="5085:5154" ph="UPDATE ordin... " />
+            <marker date="1486647765165" expanded="true" signature="5085:5236" ph="UPDATE ordin... " />
+            <marker date="1486647765165" expanded="true" signature="5492:5621" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="5882:5935" ph="DELETE FROM " />
+            <marker date="1486647765165" expanded="true" signature="8359:8391" ph="select '.${$... " />
+            <marker date="1486647765165" expanded="true" signature="8359:8435" ph="select from membre" />
+            <marker date="1486647765165" expanded="true" signature="8359:8438" ph="select '.${$... " />
+            <marker date="1486647765165" expanded="true" signature="8359:8456" ph="select from membre" />
+            <marker date="1486647765165" expanded="true" signature="8732:8783" ph="SELECT MAX('... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9102" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9122" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9123" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9147" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9148" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9192" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9194" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9195" ph="INSERT INTO " />
+            <marker date="1486647765165" expanded="true" signature="9090:9229" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9254" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9255" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9281" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9282" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9327" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9493:9623" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="9721:9847" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="9953:10069" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="10177:10306" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="10877:10896" ph="SELECT * FRO... setup" />
+            <marker date="1486647765165" expanded="true" signature="11681:11821" ph="SELECT ord_c... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="11681:11840" ph="SELECT ord_c... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="11954:12384" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="11989:12379" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12103:12175" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12216:12360" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12505:13036" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12527:13022" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12637:12703" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12740:13007" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="13129:13160" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13196" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13197" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13221" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13412:13482" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13695:13767" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13977:14010" ph="DELETE FROM " />
+            <marker date="1486647765165" expanded="true" signature="15036:15163" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="15101:15162" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="15725:15844" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="15786:15843" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="16451:16572" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="16513:16571" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="17179:17304" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="17243:17303" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="17980:18162" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="18221:18296" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="18328:18399" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="18431:18503" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="18535:18611" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="19328:19359" ph="SELECT MAX(s... setup" />
+            <marker date="1486647765165" expanded="true" signature="19666:19888" ph="INSERT INTO setup... " />
+            <marker date="1486647765165" expanded="true" signature="20107:20234" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1231,93 +1255,97 @@
         <state relative-caret-position="308">
           <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
           <folding>
-            <marker date="1486645478217" expanded="true" signature="890:919" ph="SELECT ord_c... ${$vertype}" />
-            <marker date="1486645478217" expanded="true" signature="890:942" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:943" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:961" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:963" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="1000:1025" ph="SELECT sou_i... sou" />
-            <marker date="1486645478217" expanded="true" signature="1000:1048" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1000:1049" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1000:1067" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1106:1132" ph="SELECT cla_i... WHERE" />
-            <marker date="1486645478217" expanded="true" signature="1106:1155" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1106:1156" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1106:1174" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1215:1241" ph="SELECT ecran... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="1215:1266" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="1215:1267" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="1215:1285" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="2397:2567" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="2816:2946" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="3835:3848" ph="SELECT * FRO... " />
-            <marker date="1486645478217" expanded="true" signature="3835:3849" ph="SELECT * FRO... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="3835:3868" ph="SELECT * FRO... " />
-            <marker date="1486645478217" expanded="true" signature="4124:4299" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4147:4299" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4325:5798" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4362:5729" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4734:5715" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:4832" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:4933" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:5696" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="5085:5154" ph="UPDATE ordin... " />
-            <marker date="1486645478217" expanded="true" signature="5085:5236" ph="UPDATE ordin... " />
-            <marker date="1486645478217" expanded="true" signature="5492:5621" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="5882:5935" ph="DELETE FROM " />
-            <marker date="1486645478217" expanded="true" signature="8359:8391" ph="select '.${$... " />
-            <marker date="1486645478217" expanded="true" signature="8359:8435" ph="select from membre" />
-            <marker date="1486645478217" expanded="true" signature="8359:8438" ph="select '.${$... " />
-            <marker date="1486645478217" expanded="true" signature="8359:8456" ph="select from membre" />
-            <marker date="1486645478217" expanded="true" signature="8732:8783" ph="SELECT MAX('... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9102" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9122" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9123" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9147" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9148" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9192" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9194" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9195" ph="INSERT INTO " />
-            <marker date="1486645478217" expanded="true" signature="9090:9229" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9254" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9255" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9281" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9282" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9327" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9493:9623" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="9721:9847" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="9953:10069" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="10177:10306" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="10877:10896" ph="SELECT * FRO... setup" />
-            <marker date="1486645478217" expanded="true" signature="11432:11505" ph="SELECT ord_c... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="11432:11521" ph="SELECT ord_c... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="11541:11626" ph="SELECT sou_c... souris" />
-            <marker date="1486645478217" expanded="true" signature="11646:11716" ph="SELECT cla_c... clavier" />
-            <marker date="1486645478217" expanded="true" signature="11646:11732" ph="SELECT cla_c... clavier" />
-            <marker date="1486645478217" expanded="true" signature="11752:11844" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="14749:14780" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14816" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14817" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14841" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15032:15102" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15315:15387" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15597:15630" ph="DELETE FROM " />
-            <marker date="1486645478217" expanded="true" signature="16656:16783" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="16721:16782" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="17345:17464" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="17406:17463" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="18071:18192" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="18133:18191" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="18799:18924" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="18863:18923" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="19600:19782" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="19841:19916" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="19948:20019" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="20051:20123" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="20155:20231" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="20948:20979" ph="SELECT MAX(s... setup" />
-            <marker date="1486645478217" expanded="true" signature="21286:21508" ph="INSERT INTO setup... " />
-            <marker date="1486645478217" expanded="true" signature="21727:21854" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="890:919" ph="SELECT ord_c... ${$vertype}" />
+            <marker date="1486647765165" expanded="true" signature="890:942" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:943" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:961" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:963" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="1000:1025" ph="SELECT sou_i... sou" />
+            <marker date="1486647765165" expanded="true" signature="1000:1048" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1000:1049" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1000:1067" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1106:1132" ph="SELECT cla_i... WHERE" />
+            <marker date="1486647765165" expanded="true" signature="1106:1155" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1106:1156" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1106:1174" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1215:1241" ph="SELECT ecran... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="1215:1266" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="1215:1267" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="1215:1285" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="2397:2567" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="2816:2946" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="3835:3848" ph="SELECT * FRO... " />
+            <marker date="1486647765165" expanded="true" signature="3835:3849" ph="SELECT * FRO... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="3835:3868" ph="SELECT * FRO... " />
+            <marker date="1486647765165" expanded="true" signature="4124:4299" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4147:4299" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4325:5798" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4362:5729" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4734:5715" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:4832" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:4933" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:5696" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="5085:5154" ph="UPDATE ordin... " />
+            <marker date="1486647765165" expanded="true" signature="5085:5236" ph="UPDATE ordin... " />
+            <marker date="1486647765165" expanded="true" signature="5492:5621" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="5882:5935" ph="DELETE FROM " />
+            <marker date="1486647765165" expanded="true" signature="8359:8391" ph="select '.${$... " />
+            <marker date="1486647765165" expanded="true" signature="8359:8435" ph="select from membre" />
+            <marker date="1486647765165" expanded="true" signature="8359:8438" ph="select '.${$... " />
+            <marker date="1486647765165" expanded="true" signature="8359:8456" ph="select from membre" />
+            <marker date="1486647765165" expanded="true" signature="8732:8783" ph="SELECT MAX('... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9102" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9122" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9123" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9147" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9148" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9192" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9194" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9195" ph="INSERT INTO " />
+            <marker date="1486647765165" expanded="true" signature="9090:9229" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9254" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9255" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9281" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9282" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9327" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9493:9623" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="9721:9847" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="9953:10069" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="10177:10306" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="10877:10896" ph="SELECT * FRO... setup" />
+            <marker date="1486647765165" expanded="true" signature="11681:11821" ph="SELECT ord_c... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="11681:11840" ph="SELECT ord_c... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="11954:12384" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="11989:12379" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12103:12175" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12216:12360" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12505:13036" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12527:13022" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12637:12703" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12740:13007" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="13129:13160" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13196" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13197" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13221" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13412:13482" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13695:13767" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13977:14010" ph="DELETE FROM " />
+            <marker date="1486647765165" expanded="true" signature="15036:15163" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="15101:15162" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="15725:15844" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="15786:15843" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="16451:16572" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="16513:16571" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="17179:17304" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="17243:17303" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="17980:18162" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="18221:18296" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="18328:18399" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="18431:18503" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="18535:18611" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="19328:19359" ph="SELECT MAX(s... setup" />
+            <marker date="1486647765165" expanded="true" signature="19666:19888" ph="INSERT INTO setup... " />
+            <marker date="1486647765165" expanded="true" signature="20107:20234" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1399,14 +1427,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="97" column="1" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/r/gestion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
@@ -1448,98 +1468,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="97" column="1" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/r/stockage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="244" column="118" selection-start-line="244" selection-start-column="118" selection-end-line="244" selection-end-column="118" />
+        <state relative-caret-position="792">
+          <caret line="297" column="39" selection-start-line="297" selection-start-column="39" selection-end-line="297" selection-end-column="39" />
           <folding>
-            <marker date="1486645478217" expanded="true" signature="890:919" ph="SELECT ord_c... ${$vertype}" />
-            <marker date="1486645478217" expanded="true" signature="890:942" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:943" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:961" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="890:963" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="1000:1025" ph="SELECT sou_i... sou" />
-            <marker date="1486645478217" expanded="true" signature="1000:1048" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1000:1049" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1000:1067" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="1106:1132" ph="SELECT cla_i... WHERE" />
-            <marker date="1486645478217" expanded="true" signature="1106:1155" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1106:1156" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1106:1174" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="1215:1241" ph="SELECT ecran... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="1215:1266" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="1215:1267" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="1215:1285" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="2397:2567" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="2816:2946" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="3835:3848" ph="SELECT * FRO... " />
-            <marker date="1486645478217" expanded="true" signature="3835:3849" ph="SELECT * FRO... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="3835:3868" ph="SELECT * FRO... " />
-            <marker date="1486645478217" expanded="true" signature="4124:4299" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4147:4299" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4325:5798" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4362:5729" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4734:5715" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:4832" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:4933" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="4814:5696" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="5085:5154" ph="UPDATE ordin... " />
-            <marker date="1486645478217" expanded="true" signature="5085:5236" ph="UPDATE ordin... " />
-            <marker date="1486645478217" expanded="true" signature="5492:5621" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="5882:5935" ph="DELETE FROM " />
-            <marker date="1486645478217" expanded="true" signature="8359:8391" ph="select '.${$... " />
-            <marker date="1486645478217" expanded="true" signature="8359:8435" ph="select from membre" />
-            <marker date="1486645478217" expanded="true" signature="8359:8438" ph="select '.${$... " />
-            <marker date="1486645478217" expanded="true" signature="8359:8456" ph="select from membre" />
-            <marker date="1486645478217" expanded="true" signature="8732:8783" ph="SELECT MAX('... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9102" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9122" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9123" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9147" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9148" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9192" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9194" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9195" ph="INSERT INTO " />
-            <marker date="1486645478217" expanded="true" signature="9090:9229" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9254" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9255" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9281" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9282" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9090:9327" ph="INSERT INTO ${$vertype}... " />
-            <marker date="1486645478217" expanded="true" signature="9493:9623" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="9721:9847" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="9953:10069" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="10177:10306" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="10877:10896" ph="SELECT * FRO... setup" />
-            <marker date="1486645478217" expanded="true" signature="11432:11505" ph="SELECT ord_c... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="11432:11521" ph="SELECT ord_c... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="11541:11626" ph="SELECT sou_c... souris" />
-            <marker date="1486645478217" expanded="true" signature="11646:11716" ph="SELECT cla_c... clavier" />
-            <marker date="1486645478217" expanded="true" signature="11646:11732" ph="SELECT cla_c... clavier" />
-            <marker date="1486645478217" expanded="true" signature="11752:11844" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="14749:14780" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14816" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14817" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="14749:14841" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15032:15102" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15315:15387" ph="UPDATE setup... " />
-            <marker date="1486645478217" expanded="true" signature="15597:15630" ph="DELETE FROM " />
-            <marker date="1486645478217" expanded="true" signature="16656:16783" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="16721:16782" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="17345:17464" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="17406:17463" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="18071:18192" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="18133:18191" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="18799:18924" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="18863:18923" ph="SELECT null setup" />
-            <marker date="1486645478217" expanded="true" signature="19600:19782" ph="..." />
-            <marker date="1486645478217" expanded="true" signature="19841:19916" ph="SELECT ord_i... ordinateur" />
-            <marker date="1486645478217" expanded="true" signature="19948:20019" ph="SELECT sou_i... souris" />
-            <marker date="1486645478217" expanded="true" signature="20051:20123" ph="SELECT cla_i... clavier" />
-            <marker date="1486645478217" expanded="true" signature="20155:20231" ph="SELECT ecran... ecran" />
-            <marker date="1486645478217" expanded="true" signature="20948:20979" ph="SELECT MAX(s... setup" />
-            <marker date="1486645478217" expanded="true" signature="21286:21508" ph="INSERT INTO setup... " />
-            <marker date="1486645478217" expanded="true" signature="21727:21854" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="890:919" ph="SELECT ord_c... ${$vertype}" />
+            <marker date="1486647765165" expanded="true" signature="890:942" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:943" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:961" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="890:963" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="1000:1025" ph="SELECT sou_i... sou" />
+            <marker date="1486647765165" expanded="true" signature="1000:1048" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1000:1049" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1000:1067" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="1106:1132" ph="SELECT cla_i... WHERE" />
+            <marker date="1486647765165" expanded="true" signature="1106:1155" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1106:1156" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1106:1174" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="1215:1241" ph="SELECT ecran... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="1215:1266" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="1215:1267" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="1215:1285" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="2397:2567" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="2816:2946" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="3835:3848" ph="SELECT * FRO... " />
+            <marker date="1486647765165" expanded="true" signature="3835:3849" ph="SELECT * FRO... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="3835:3868" ph="SELECT * FRO... " />
+            <marker date="1486647765165" expanded="true" signature="4124:4299" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4147:4299" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4325:5798" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4362:5729" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4734:5715" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:4832" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:4933" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="4814:5696" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="5085:5154" ph="UPDATE ordin... " />
+            <marker date="1486647765165" expanded="true" signature="5085:5236" ph="UPDATE ordin... " />
+            <marker date="1486647765165" expanded="true" signature="5492:5621" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="5882:5935" ph="DELETE FROM " />
+            <marker date="1486647765165" expanded="true" signature="8359:8391" ph="select '.${$... " />
+            <marker date="1486647765165" expanded="true" signature="8359:8435" ph="select from membre" />
+            <marker date="1486647765165" expanded="true" signature="8359:8438" ph="select '.${$... " />
+            <marker date="1486647765165" expanded="true" signature="8359:8456" ph="select from membre" />
+            <marker date="1486647765165" expanded="true" signature="8732:8783" ph="SELECT MAX('... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9102" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9122" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9123" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9147" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9148" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9192" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9194" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9195" ph="INSERT INTO " />
+            <marker date="1486647765165" expanded="true" signature="9090:9229" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9254" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9255" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9281" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9282" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9090:9327" ph="INSERT INTO ${$vertype}... " />
+            <marker date="1486647765165" expanded="true" signature="9493:9623" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="9721:9847" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="9953:10069" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="10177:10306" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="10877:10896" ph="SELECT * FRO... setup" />
+            <marker date="1486647765165" expanded="true" signature="11681:11821" ph="SELECT ord_c... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="11681:11840" ph="SELECT ord_c... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="11954:12384" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="11989:12379" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12103:12175" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12216:12360" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12505:13036" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12527:13022" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12637:12703" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="12740:13007" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="13129:13160" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13196" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13197" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13129:13221" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13412:13482" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13695:13767" ph="UPDATE setup... " />
+            <marker date="1486647765165" expanded="true" signature="13977:14010" ph="DELETE FROM " />
+            <marker date="1486647765165" expanded="true" signature="15036:15163" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="15101:15162" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="15725:15844" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="15786:15843" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="16451:16572" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="16513:16571" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="17179:17304" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="17243:17303" ph="SELECT null setup" />
+            <marker date="1486647765165" expanded="true" signature="17980:18162" ph="..." />
+            <marker date="1486647765165" expanded="true" signature="18221:18296" ph="SELECT ord_i... ordinateur" />
+            <marker date="1486647765165" expanded="true" signature="18328:18399" ph="SELECT sou_i... souris" />
+            <marker date="1486647765165" expanded="true" signature="18431:18503" ph="SELECT cla_i... clavier" />
+            <marker date="1486647765165" expanded="true" signature="18535:18611" ph="SELECT ecran... ecran" />
+            <marker date="1486647765165" expanded="true" signature="19328:19359" ph="SELECT MAX(s... setup" />
+            <marker date="1486647765165" expanded="true" signature="19666:19888" ph="INSERT INTO setup... " />
+            <marker date="1486647765165" expanded="true" signature="20107:20234" ph="..." />
           </folding>
         </state>
       </provider>
