@@ -83,42 +83,42 @@ function listeelement()
     $result = mysqli_query($db, 'SELECT * FROM ordinateur');
     //lecture des resultats
     while ($Row = mysqli_fetch_array($result)) {
-        $supp = '<a href="gestion.php?stockage&amp;suppord=' . $Row[0] . '" >X</a>';
+        $supp = '<a href="gestion.php?stockage&amp;suppord=' . $Row[0] . '" ><span class="glyphicon glyphicon-remove"></span></a>';
         $modif  = '<div class="form-group">
                     <input type="text" name="clibelle" class="form-control" placeholder="Entrer la designation">
                     </div>';
-        print('<tr id=' . $Row[1] . '><td>' . $Row[2] . '</td>
-        <td><div class="dropdown">
-          <button class="btn btn-info dropdown-toggle btn-xs btn-block" type="button" data-toggle="dropdown">'. $Row[1] .'
-                <span class="caret"></span></button>
-          <ul class="dropdown-menu">
+        print('<tr><td>' . $Row[2] . '</td>
+        <td><label class="mb-2 mr-sm-2 mb-sm-0 " id="' . $Row[1] . '">' . $Row[1] . ' </label>
+        <button class="btn btn-default btn-sm pull-right" type="button" data-target="#' . $Row[0] . '" data-toggle="collapse" aria-expanded="false" aria-controls="MonCollapse"><span class="glyphicon glyphicon-pencil"></span></button>
+        <section id="' . $Row[0] . '" class="collapse" >
             <form method="post" id="celement" class="form-inline">
-            <li>'. $modif .'</li>
-            <li><button name="celement" type="submit" class="btn btn-block btn-info">Modifier</button></li>
+                '. $modif .'<button name="celement" type="submit" class="btn btn-info">Modifier</button>');
+            if(isset($_POST["celement"])) {
+                if (!empty($_POST['clibelle'])) {
+                    $sql = 'UPDATE ordinateur
+                SET ord_libelle = "'.$_POST['clibelle'].'"
+                WHERE ord_id = '. $Row[0];
+                    mysqli_query($db, $sql);
+                    print('<meta http-equiv="refresh" content="0";URL=gestion.php?stockage#lelement">');
+                }
+                else{
+                    print('</section><div class="alert alert-danger">
+                            <strong>Danger!</strong> Vous n\'avez pas indiquez la désignation
+                            </div>');
+                }
+            }
+            print('
             </form>
-          </ul>
-        </div>
+        </section>
         </td>
         <td>' . $Row[3] . '</td>
         <td>' . $supp . '</td></tr>');
-    }
-    if(isset($_POST["celement"])) {
-        if (!empty($_POST['clibelle'])) {
-            $sql = 'UPDATE ordinateur
-            SET ord_libelle = '.$_POST['clibelle'].'
-            WHERE ord_id = '. $Row[0];
-            mysqli_query($db, $sql);
-            print('<meta http-equiv="refresh" content="10";URL=gestion.php?stockage#lelement">');
-        }
-        else{
-            print($Row[0]);
-        }
     }
     if (isset($_GET['suppord'])) {
         $sql = 'DELETE FROM ordinateur WHERE ord_id=' . $_GET['suppord'];
         mysqli_query($db, $sql);
         $nom = $_GET['suppord'];
-        print('<meta http-equiv="refresh" content="0;URL=gestion.php?stockage">');
+        print('<meta http-equiv="refresh" content="0;URL=gestion.php?stockage#lelement">');
     }
     //libération des ressources
     mysqli_free_result($result);

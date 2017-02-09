@@ -38,8 +38,8 @@
     }else if(isset($_GET['devis'])){
         document("devis");
     }else if(isset($_GET['commande'])){
-        document("commandes");
-    }else if(isset($_GET['factures'])){
+        document("commande");
+    }else if(isset($_GET['facture'])){
         document("facture");
     }else{
     ?>
