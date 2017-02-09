@@ -79,29 +79,32 @@ function listeelement()
     <tbody>
     <?php
     require('function/connect.php');
-    //exécution de la requête
-    $result = mysqli_query($db, 'SELECT * FROM ordinateur');
-    //lecture des resultats
-    while ($Row = mysqli_fetch_array($result)) {
-        $supp = '<a href="gestion.php?stockage&amp;suppord=' . $Row[0] . '" ><span class="glyphicon glyphicon-remove"></span></a>';
-        $modif  = '<div class="form-group">
-                    <input type="text" name="clibelle" class="form-control" placeholder="Entrer la designation">
+    $materiel = array("ordinateur","souris","clavier","ecran");
+    $base = array("ord","sou","cla","ecran");
+    $i = 0;
+    while ($i < count($materiel)) {
+        //exécution de la requête
+        $result = mysqli_query($db, 'SELECT * FROM '.$materiel[$i].' ');
+        //lecture des resultats
+        while ($Row = mysqli_fetch_array($result)) {
+            $supp = '<a href="gestion.php?stockage&amp;supp'.$base[$i].'=' . $Row[0] . '" ><span class="glyphicon glyphicon-remove"></span></a>';
+            $modif = '<div class="form-group">
+                    <input type="text" name="'.$base[$i].'libelle" class="form-control" placeholder="Entrer la designation">
                     </div>';
-        print('<tr><td>' . $Row[2] . '</td>
+            print('<tr><td>' . $Row[2] . '</td>
         <td><label class="mb-2 mr-sm-2 mb-sm-0 " id="' . $Row[1] . '">' . $Row[1] . ' </label>
         <button class="btn btn-default btn-sm pull-right" type="button" data-target="#' . $Row[0] . '" data-toggle="collapse" aria-expanded="false" aria-controls="MonCollapse"><span class="glyphicon glyphicon-pencil"></span></button>
         <section id="' . $Row[0] . '" class="collapse" >
-            <form method="post" id="celement" class="form-inline">
-                '. $modif .'<button name="celement" type="submit" class="btn btn-info">Modifier</button>');
-            if(isset($_POST["celement"])) {
-                if (!empty($_POST['clibelle'])) {
-                    $sql = 'UPDATE ordinateur
-                SET ord_libelle = "'.$_POST['clibelle'].'"
-                WHERE ord_id = '. $Row[0];
+            <form method="post" id="'.$base[$i].'element" class="form-inline">
+                ' . $modif . '<button name="'.$base[$i].'element" type="submit" class="btn btn-info">Modifier</button>');
+            if (isset($_POST[''.$base[$i].'element'])) {
+                if (!empty($_POST[''.$base[$i].'libelle'])) {
+                    $sql = 'UPDATE '.$materiel[$i].'
+                SET '.$base[$i].'_libelle = "' . $_POST[''.$base[$i].'libelle'] . '"
+                WHERE '.$base[$i].'_id = ' . $Row[0];
                     mysqli_query($db, $sql);
                     print('<meta http-equiv="refresh" content="0";URL=gestion.php?stockage#lelement">');
-                }
-                else{
+                } else {
                     print('</section><div class="alert alert-danger">
                             <strong>Danger!</strong> Vous n\'avez pas indiquez la désignation
                             </div>');
@@ -113,81 +116,14 @@ function listeelement()
         </td>
         <td>' . $Row[3] . '</td>
         <td>' . $supp . '</td></tr>');
-    }
-    if (isset($_GET['suppord'])) {
-        $sql = 'DELETE FROM ordinateur WHERE ord_id=' . $_GET['suppord'];
-        mysqli_query($db, $sql);
-        $nom = $_GET['suppord'];
-        print('<meta http-equiv="refresh" content="0;URL=gestion.php?stockage#lelement">');
-    }
-    //libération des ressources
-    mysqli_free_result($result);
-    //fermer la connexion
-    mysqli_close($db);
-    ?>
-    <tr></tr>
-    <?php
-    require('function/connect.php');
-    //exécution de la requête
-    $result = mysqli_query($db, 'SELECT * FROM souris');
-    //lecture des resultats
-    while ($Row = mysqli_fetch_array($result)) {
-        $supp = '<a href="gestion.php?stockage&amp;suppsou=' . $Row[0] . '" >X</a>';
-        $modif  = "modifier";
-        print('<tr><td>' . $Row[2] . '</td><td>' . $Row[1] . '</td><td>' . $Row[3] . '</td><td>' . $supp . '</td></tr>');
-    }
-
-    if (isset($_GET['suppsou'])) {
-        $sql = 'DELETE FROM souris WHERE sou_id=' . $_GET['suppsou'];
-        mysqli_query($db, $sql);
-        $nom = $_GET['suppsou'];
-        print('<meta http-equiv="refresh" content="0;URL=gestion.php?stockage">');
-    }
-    //libération des ressources
-    mysqli_free_result($result);
-    //fermer la connexion
-    mysqli_close($db);
-    ?>
-    <tr></tr>
-    <?php
-    require('function/connect.php');
-    //exécution de la requête
-    $result = mysqli_query($db, 'SELECT * FROM clavier');
-    //lecture des resultats
-    while ($Row = mysqli_fetch_array($result)) {
-        $supp = '<a href="gestion.php?stockage&amp;suppcla=' . $Row[0] . '" >X</a>';
-        $modif  = "modifier";
-        print('<tr><td>' . $Row[2] . '</td><td>' . $Row[1] . '</td><td>' . $Row[3] . '</td><td>' . $supp . '</td></tr>');
-    }
-
-    if (isset($_GET['suppcla'])) {
-        $sql = 'DELETE FROM clavier WHERE cla_id=' . $_GET['suppcla'];
-        mysqli_query($db, $sql);
-        $nom = $_GET['suppcla'];
-        print('<meta http-equiv="refresh" content="0;URL=gestion.php?stockage">');
-    }
-    //libération des ressources
-    mysqli_free_result($result);
-    //fermer la connexion
-    mysqli_close($db);
-    ?>
-    <tr></tr>
-    <?php
-    require('function/connect.php');
-    //exécution de la requête
-    $result = mysqli_query($db, 'SELECT * FROM ecran');
-    //lecture des resultats
-    while ($Row = mysqli_fetch_array($result)) {
-        $supp = '<a href="gestion.php?stockage&amp;suppecr=' . $Row[0] . '" >X</a>';
-        $modif  = "modifier";
-        print('<tr><td>' . $Row[2] . '</td><td>' . $Row[1] . '</td><td>' . $Row[3] . '</td><td>' . $supp . '</td></tr>');
-    }
-
-    if (isset($_GET['suppecr'])) {
-        $sql = 'DELETE FROM ecran WHERE ecran_id=' . $_GET['suppecr'];
-        mysqli_query($db, $sql);
-        $nom = $_GET['suppecr'];
-        print('<meta http-equiv="refresh" content="0;URL=gestion.php?stockage">');
+        }
+        if (isset($_GET['supp'.$base[$i].''])) {
+            $sql = 'DELETE FROM '.$materiel[$i].' WHERE '.$base[$i].'_id=' . $_GET['supp'.$base[$i].''];
+            mysqli_query($db, $sql);
+            $nom = $_GET['supp'.$base[$i].''];
+            print('<meta http-equiv="refresh" content="0;URL=gestion.php?stockage#lelement">');
+        }
+        $i++;
     }
     //libération des ressources
     mysqli_free_result($result);
@@ -306,7 +242,7 @@ function listesetup(){
     $result = mysqli_query($db, 'SELECT * FROM setup');
     //lecture des resultats
     while ($Row = mysqli_fetch_array($result)) {
-        $supp = '<a href="gestion.php?stockage&amp;suppsetup=' . $Row[0] . '" >X</a>';
+        $supp = '<a href="gestion.php?stockage&amp;suppsetup=' . $Row[0] . '" ><span class="glyphicon glyphicon-remove"></span></a>';
         $modutil = '<a href="gestion.php?stockage&amp;modutilsetup=' . $Row[0] . '" >Utiliser</a>';
         $moddispo = '<a href="gestion.php?stockage&amp;moddisposetup=' . $Row[0] . '" >Disponible</a>';
         $modhs = '<a href="gestion.php?stockage&amp;modhssetup=' . $Row[0] . '" >Hors-service</a>';
