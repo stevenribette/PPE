@@ -93,7 +93,7 @@ class stockage
                     $supp = '<a href="gestion.php?stockage&amp;supp' . $this->base[$i] . '=' . $Row[0] . '" ><span class="glyphicon glyphicon-remove"></span></a>';
                     $modif = '
                         <div class="form-group">
-                            <input type="text" name="' . $this->base[$i] . 'libelle" class="form-control" placeholder="Entrer la designation">
+                            <input type="text" name="' . $this->base[$i] . 'libelle" class="form-control" value="' . $Row[1] . '" placeholder="Entrer la designation">
                         </div>';
                     print('<tr><td>' . $Row[2] . '</td>
                     <td>
