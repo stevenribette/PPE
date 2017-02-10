@@ -7,6 +7,8 @@ function stockage (){
 }
 function listeelement()
 {
+    $materiel = array("ordinateur","souris","clavier","ecran");
+    $base = array("ord","sou","cla","ecran");
     ?>
     <div class="container">
     <div class="row">
@@ -79,12 +81,10 @@ function listeelement()
     <tbody>
     <?php
     require('function/connect.php');
-    $materiel = array("ordinateur","souris","clavier","ecran");
-    $base = array("ord","sou","cla","ecran");
     $i = 0;
     while ($i < count($materiel)) {
         //exécution de la requête
-        $result = mysqli_query($db, 'SELECT * FROM '.$materiel[$i].' ');
+        $result = mysqli_query($db, 'SELECT * FROM '.$materiel[$i].' ORDER BY '.$base[$i].'_id DESC ');
         //lecture des resultats
         while ($Row = mysqli_fetch_array($result)) {
             $supp = '<a href="gestion.php?stockage&amp;supp'.$base[$i].'=' . $Row[0] . '" ><span class="glyphicon glyphicon-remove"></span></a>';
@@ -137,13 +137,13 @@ function listeelement()
 
 function nelement(){
     ?><!-- les boutons d'actions -->
-    <button class="btn btn-primary" type="button" data-target="#Monnelement" data-toggle="collapse" aria-expanded="false" aria-controls="MonCollapse">Ajouter un élèment</button>
+    <button id="nelement" class="btn btn-primary" type="button" data-target="#Monnelement" data-toggle="collapse" aria-expanded="false" aria-controls="MonCollapse">Ajouter un élèment</button>
 
     <!-- le contenu masqué -->
 
     <section id="Monnelement" class="collapse">
     </br>
-    <form method="post" id="nelement" class="form-inline">
+    <form method="post" class="form-inline">
         <div class="form-group">
             <label class="sr-only">Type</label>
             <select class="form-control mb-2 mr-sm-2 mb-sm-0" name="post_type">
@@ -187,13 +187,22 @@ function nelement(){
                     $req = 'SELECT MAX(' . $debut . '_id) FROM ' . $vertype . '';
                     $result = mysqli_query($db, $req);
                     $code = mysqli_fetch_array($result);
+                    $req = 'SELECT ' . $debut . '_code FROM ' . $vertype . ' WHERE ' . $debut . '_id = '.$code[0].'';
+                    $result = mysqli_query($db, $req);
+                    $code = mysqli_fetch_array($result);
                     //libération des ressources
                     mysqli_free_result($result);
-                    $code = $code[0];
+                    $code = substr($code[0], -2);
+                    if($code == 0){
+                        $code = 0;
+                    }
                     $code++;
+                    if ($code <= 9){
+                        $code = "0" . $code;
+                    }
                     $sql = 'INSERT INTO ' . $vertype . ' set ' . $debut . '_libelle = "' . $verlibelle . '", ' . $debut . '_code = "' . strtoupper($debut) . $code . '", ' . $debut . '_marque ="'.$_POST['post_marque'].'"';
                     mysqli_query($db, $sql);
-                    print('</section><meta http-equiv="refresh" content="1;URL=gestion.php?stockage">');
+                    print('</section><meta http-equiv="refresh" content="1;URL=gestion.php?stockage#lelement">');
                     print('<div class="alert alert-success">
                               <strong>Success!</strong> Nouvel élélement ajouter à la base
                                 </div>');
@@ -237,6 +246,8 @@ function listesetup(){
     </thead>
     <tbody>
     <?php
+    $materiel = array("ordinateur", "souris", "clavier", "ecran");
+    $base = array("ord", "sou", "cla", "ecran");
     require('function/connect.php');
     //exécution de la requête
     $result = mysqli_query($db, 'SELECT * FROM setup');
@@ -247,8 +258,6 @@ function listesetup(){
         $moddispo = '<a href="gestion.php?stockage&amp;moddisposetup=' . $Row[0] . '" >Disponible</a>';
         $modhs = '<a href="gestion.php?stockage&amp;modhssetup=' . $Row[0] . '" >Hors-service</a>';
         print('<tr id=' . $Row[1] . '><td>' . $Row[1] . '</td>');
-        $materiel = array("ordinateur", "souris", "clavier", "ecran");
-        $base = array("ord", "sou", "cla", "ecran");
         $i = 0;
         while ($i < count($materiel)) {
             $req = 'SELECT ' . $base[$i] . '_libelle, ' . $base[$i] . '_code, ' . $base[$i] . '_marque FROM ' . $materiel[$i] . ' WHERE ' . $base[$i] . '_id = "' . $Row[$i+2] . '"';
@@ -263,19 +272,29 @@ function listesetup(){
                 <li><a title="Marque">' . $ver[2] . '</a></li>
               </ul>
             </div></td>');
+
+            if($ver[1] == null){
+                $sql = 'UPDATE setup
+                SET etat = "hors-service"
+                WHERE setup_id = '. $Row[0] .' ';
+                mysqli_query($db, $sql);
+            }
+
             $i++;
         }
         //libération des ressources
         mysqli_free_result($res);
-        print('<td><div class="dropdown">
+        print('<td><div class="dropdown" id="set">
           <button class="btn btn-info dropdown-toggle btn-xs btn-block" type="button" data-toggle="dropdown">'. $Row[6] .'
-                <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><button class="btn btn-info btn-block">'. $modutil .'</button></li>
-            <li><button class="btn btn-info btn-block">'. $moddispo .'</button></li>
-            <li><button class="btn btn-info btn-block">'. $modhs .'</button></li>
-          </ul>
-        </div>
+                <span class="caret"></span></button>');
+        if($ver[1] != null) {
+            print('<ul class="dropdown-menu">
+            <li><button class="btn btn-info btn-block">' . $modutil . '</button></li>
+            <li><button class="btn btn-info btn-block">' . $moddispo . '</button></li>
+            <li><button class="btn btn-info btn-block">' . $modhs . '</button></li>
+          </ul>');
+        }
+        print('</div>
         </td><td>' . $supp . '</td></tr>');
     }
     if(isset($_GET["modutilsetup"])) {
@@ -315,69 +334,35 @@ function listesetup(){
     <?php
 }
 function nsetup(){
+    $materiel = array("ordinateur", "souris", "clavier", "ecran");
+    $base = array("ord", "sou", "cla", "ecran");
+    $verlist = array(1,2,3,4);
         ?>
 
     <!-- les boutons d'actions -->
-    <button class="btn btn-primary" type="button" data-target="#Monnsetup" data-toggle="collapse" aria-expanded="false" aria-controls="MonCollapse">Ajouter un setup</button>
+    <button id="nsetup" class="btn btn-primary" type="button" data-target="#Monnsetup" data-toggle="collapse" aria-expanded="false" aria-controls="MonCollapse">Ajouter un setup</button>
 
     <!-- le contenu masqué -->
     <section id="Monnsetup" class="collapse">
         </br>
-        <form method="post" id="nsetup" class="form-inline">
-            <div class="form-group">
-                <label class="sr-only">Ordinateur</label>
-                <select class="form-control" name="post_ord">
-                    <?php
-                    require('function/connect.php');
-                    $result1 = mysqli_query($db, 'SELECT ord_id, ord_code as CODE FROM ordinateur WHERE NOT EXISTS(SELECT null FROM setup WHERE setup.ord_id = ordinateur.ord_id)');
-                    while ($Row1 = mysqli_fetch_array($result1)) {
-                        print('<option>' . $Row1['CODE'] . '</option>');
-                    }
-                    ?>
-                </select>
-            </div>
-            <div class="form-group">
-                <label class="sr-only">Souris</label>
-                <select class="form-control" name="post_sou">
-                    <?php
-                    require('function/connect.php');
-                    //exécution de la requête
-                    $result2 = mysqli_query($db, 'SELECT sou_id, sou_code as CODE FROM souris WHERE NOT EXISTS(SELECT null FROM setup WHERE setup.sou_id = souris.sou_id)');
-                    //lecture des resultats
-                    while ($Row2 = mysqli_fetch_array($result2)) {
-                        print('<option>' . $Row2['CODE'] . '</option>');
-                    }
-                    ?>
-                </select>
-            </div>
-            <div class="form-group">
-                <label class="sr-only">Clavier</label>
-                <select class="form-control" name="post_cla">
-                    <?php
-                    require('function/connect.php');
-                    //exécution de la requête
-                    $result3 = mysqli_query($db, 'SELECT cla_id, cla_code as CODE FROM clavier WHERE NOT EXISTS(SELECT null FROM setup WHERE setup.cla_id = clavier.cla_id)');
-                    //lecture des resultats
-                    while ($Row3 = mysqli_fetch_array($result3)) {
-                        print('<option>' . $Row3['CODE'] . '</option>');
-                    }
-                    ?>
-                </select>
-            </div>
-            <div class="form-group">
-                <label class="sr-only">Ecran</label>
-                <select class="form-control" name="post_ecran">
-                    <?php
-                    require('function/connect.php');
-                    //exécution de la requête
-                    $result4 = mysqli_query($db, 'SELECT ecran_id, ecran_code as CODE FROM ecran WHERE NOT EXISTS(SELECT null FROM setup WHERE setup.ecran_id = ecran.ecran_id)');
-                    //lecture des resultats
-                    while ($Row4 = mysqli_fetch_array($result4)) {
-                        print('<option>' . $Row4['CODE'] . '</option>');
-                    }
-                    ?>
-                </select>
-            </div>
+        <form method="post" class="form-inline">
+            <?php
+            $i=0;
+            while ($i < count($materiel)) {
+
+                print('<div class="form-group">
+                    <label class="sr-only">'.$materiel[$i].'</label>
+                    <select class="form-control" name="post_'.$base[$i].'">');
+                        require('function/connect.php');
+                        $result = mysqli_query($db, 'SELECT '.$base[$i].'_id, '.$base[$i].'_code as CODE FROM '.$materiel[$i].' WHERE NOT EXISTS(SELECT null FROM setup WHERE setup.'.$base[$i].'_id = '.$materiel[$i].'.'.$base[$i].'_id)');
+                        while ($Row = mysqli_fetch_array($result)) {
+                            print('<option>' . $Row['CODE'] . '</option>');
+                        }
+                    print('
+                        </select>
+                        </div>');
+            $i++;}
+            ?>
             <button name="nsetup" type="submit" class="btn btn-primary">Ajouter</button>
             <?php
             require('function/connect.php');
@@ -387,37 +372,37 @@ function nsetup(){
                             <strong>Danger!</strong> Un setup doit être constituer d\'un ordinateur, d\'une souris, d\'un clavier, et d\'un écran 
                             </div>');
                 } else {
-                    $req1 = 'SELECT ord_id FROM ordinateur WHERE ord_code = "' . $_POST['post_ord'] . '"';
-                    $req2 = 'SELECT sou_id FROM souris WHERE sou_code = "' . $_POST['post_sou'] . '"';
-                    $req3 = 'SELECT cla_id FROM clavier WHERE cla_code = "' . $_POST['post_cla'] . '"';
-                    $req4 = 'SELECT ecran_id FROM ecran WHERE ecran_code = "' . $_POST['post_ecran'] . '"';
-                    $res1 = mysqli_query($db, $req1);
-                    $res2 = mysqli_query($db, $req2);
-                    $res3 = mysqli_query($db, $req3);
-                    $res4 = mysqli_query($db, $req4);
-                    $ord_ver = mysqli_fetch_array($res1);
-                    $sou_ver = mysqli_fetch_array($res2);
-                    $cla_ver = mysqli_fetch_array($res3);
-                    $ecran_ver = mysqli_fetch_array($res4);
+                    $i=0;
+                    while ($i < count($materiel)) {
+                        $req = 'SELECT ' . $base[$i] . '_id FROM ' . $materiel[$i] . ' WHERE ' . $base[$i] . '_code = "' . $_POST['post_' . $base[$i] . ''] . '"';
+                        $res = mysqli_query($db, $req);
+                        $ver = mysqli_fetch_array($res);
+                        $verlist[$i] = $ver[0];
+                        $i++;
+                    }
                     //libération des ressources
-                    mysqli_free_result($res1);
-                    mysqli_free_result($res2);
-                    mysqli_free_result($res3);
-                    mysqli_free_result($res4);
+                    mysqli_free_result($res);
                     $req = 'SELECT MAX(setup_id) FROM setup';
                     $result = mysqli_query($db, $req);
                     $code = mysqli_fetch_array($result);
-                    $code = $code[0];
-                    if ($code == null){
+                    $req = 'SELECT setup_code FROM setup WHERE setup_id = '.$code[0].' ';
+                    $result = mysqli_query($db, $req);
+                    $code = mysqli_fetch_array($result);
+                    mysqli_free_result($result);
+                    $code = substr($code[0], -2);
+                    if($code == 0){
                         $code = 0;
                     }
                     $code++;
-                    $sql = 'INSERT INTO setup set setup_code = "' . strtoupper("set") . $code . '", ord_id = "' . $ord_ver[0] . '", sou_id = "'. $sou_ver[0] . '", cla_id = "' . $cla_ver[0] . '", ecran_id = "' . $ecran_ver[0] . '", etat = "disponible"';
+                    if ($code <= 9){
+                        $code = "0" . $code;
+                    }
+                    $sql = 'INSERT INTO setup set setup_code = "' . strtoupper("set") . $code . '", ord_id = "' . $verlist[0] . '", sou_id = "'. $verlist[1] . '", cla_id = "' . $verlist[2] . '", ecran_id = "' . $verlist[3] . '", etat = "disponible"';
                     mysqli_query($db, $sql);
-                    print('<meta http-equiv="refresh" content="1;URL=gestion.php?stockage#lsetup">');
                     print('</section><div class="alert alert-success">
                               <strong>Success!</strong> Nouveau setup ajouter à la base
                                 </div>');
+                    print('<meta http-equiv="refresh" content="1";URL=gestion.php?stockage#lsetup">');
                 }
                 //fermer la connexion
                 mysqli_close($db);
@@ -425,8 +410,8 @@ function nsetup(){
             ?>
         </form>
         </section>
-        </br>
     </div>
+    </br>
     <?php
 }
 ?>
