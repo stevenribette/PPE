@@ -35,8 +35,9 @@ function navbar(){
                     <a class="dropdown-toggle" href="#">Fournisseur
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="gestion.php?fournisseur#lelement">Liste des fournisseurs</a></li>
-                        <li><a href="gestion.php?fournisseur#nelement">Ajouter un fournisseur</a></li>
+                        <li><a href="gestion.php?fournisseur#lfournisseur">Liste des fournisseurs</a></li>
+                        <li><a href="gestion.php?fournisseur#lcontact">Liste des contacts</a></li>
+                        <li><a href="gestion.php?fournisseur#nfournisseur">Ajouter un fournisseur</a></li>
                     </ul>
                 </li>
                 <li class="dropdown" id="personnel">
