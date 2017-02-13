@@ -1,10 +1,12 @@
 <?php
 function stockage (){
     $stock = new stockage;
+    print('<div class="container">');
     $stock->listeelement();
     $stock->nelement();
     $stock->listesetup();
     $stock->nsetup();
+    print('</div>');
 }
 class stockage
 {
@@ -13,7 +15,6 @@ class stockage
     function listeelement()
     {
         ?>
-        <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-6">
                 <form method="get" class="search-form">
@@ -434,7 +435,6 @@ class stockage
                 ?>
             </form>
         </section>
-        </div>
         </br>
         <?php
     }
