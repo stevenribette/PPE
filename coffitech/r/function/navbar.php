@@ -27,7 +27,7 @@ function navbar(){
                     <a class="dropdown-toggle" href="#">Client
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="gestion.php?client#lelement">Liste des Client</a></li>
+                        <li><a href="gestion.php?client#lelement">Liste des Clients</a></li>
                         <li><a href="gestion.php?client#nelement">Ajouter un client</a></li>
                     </ul>
                 </li>
@@ -63,6 +63,7 @@ function navbar(){
                         <li><a href="gestion.php?devis">Devis</a></li>
                         <li><a href="gestion.php?commande">Commande</a></li>
                         <li><a href="gestion.php?facture">Facture</a></li>
+                        <li><a href="gestion.php?caisse">Caisse</a></li>
                     </ul>
                 </li>
             </ul>

@@ -3,6 +3,7 @@ function fournisseur(){
 	$fournisseur = new fournisseur;
     print('<div class="container">');
     $fournisseur->lfournisseur();
+    print('</br>');
     $fournisseur->lcontact();
     $fournisseur->nfournisseur();
     print('</div>');
@@ -11,6 +12,8 @@ class fournisseur{
     function lfournisseur()
     {
         ?>
+        <fieldset>
+            <legend>Fournisseur</legend>
         <table class="table table-striped">
             <thead>
             <tr>
@@ -103,12 +106,15 @@ class fournisseur{
             ?>
             </tbody>
         </table>
+        </fieldset>
         <?php
     }
 
     function lcontact()
     {
         ?>
+        <fieldset>
+            <legend>Contact</legend>
             <table class="table table-striped">
                 <thead>
                 <tr>
@@ -195,6 +201,7 @@ class fournisseur{
                 ?>
                 </tbody>
             </table>
+            </fieldset>
         <?php
     }
     function nfournisseur()
