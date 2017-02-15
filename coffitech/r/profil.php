@@ -83,6 +83,8 @@ function profil (){
     }
     print('</tbody>
             </table>
+            </div><div class="col-sm-4">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=dd7j2mr6ggucplaaspqmmh2kb4%40group.calendar.google.com&amp;color=%23711616&amp;ctz=Europe%2FBrussels" class="btn-block" style="border-width:0" height="300" frameborder="0" scrolling="no"></iframe>
             </div>');
 }
 ?>

@@ -16,6 +16,7 @@
     require ("fournisseur.php");
     require ("produit.php");
     require ("document.php");
+    require ("caisse.php");
 
     require ("function/navbar.php");
     navbar();
@@ -26,22 +27,34 @@
     else if(isset($_GET['client'])){
         client();
     }
+    else if(isset($_GET['fournisseur'])){
+        fournisseur();
+    }
     else if(isset($_GET['personnel'])){
         personnel();
     }
-    else if(isset($_GET['fournisseur'])){
-        fournisseur();
-    }else if(isset($_GET['personnel'])){
-        personnel();
-    }else if(isset($_GET['produit'])){
+    else if(isset($_GET['fonction'])){
+        pers("fonction");
+    }
+    else if(isset($_GET['salaire'])){
+        pers("salaire");
+    }
+    else if(isset($_GET['produit'])){
         produit();
-    }else if(isset($_GET['devis'])){
+    }
+    else if(isset($_GET['devis'])){
         document("devis");
-    }else if(isset($_GET['commande'])){
+    }
+    else if(isset($_GET['commande'])){
         document("commande");
-    }else if(isset($_GET['facture'])){
+    }
+    else if(isset($_GET['facture'])){
         document("facture");
-    }else{
+    }
+    else if(isset($_GET['caisse'])){
+        caisse();
+    }
+    else{
     ?>
         <div class="container">
             <div class="row">
