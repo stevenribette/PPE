@@ -41,7 +41,7 @@ class personnel{
                 <th>Effacer</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody id="lpersonnel">
             <?php
             require('function/connect.php');
             //exécution de la requête
@@ -175,7 +175,7 @@ class personnel{
         ?>
 
         <!-- les boutons d'actions -->
-        <button id="nclient" class="btn btn-primary" type="button" data-target="#Monnsetup" data-toggle="collapse"
+        <button id="npersonnel" class="btn btn-primary" type="button" data-target="#Monnsetup" data-toggle="collapse"
                 aria-expanded="false" aria-controls="MonCollapse">Ajouter un employer
         </button>
 

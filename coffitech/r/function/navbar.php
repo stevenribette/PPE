@@ -27,8 +27,8 @@ function navbar(){
                     <a class="dropdown-toggle" href="#">Client
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="gestion.php?client#lelement">Liste des Clients</a></li>
-                        <li><a href="gestion.php?client#nelement">Ajouter un client</a></li>
+                        <li><a href="gestion.php?client#lclient">Liste des Clients</a></li>
+                        <li><a href="gestion.php?client#nclient">Ajouter un client</a></li>
                     </ul>
                 </li>
                 <li class="dropdown" id="fournisseur">
@@ -44,16 +44,16 @@ function navbar(){
                     <a class="dropdown-toggle" href="#">Personnel
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="gestion.php?personnel#lelement">Liste du personnel</a></li>
-                        <li><a href="gestion.php?personnel#nelement">Ajouter un employer</a></li>
+                        <li><a href="gestion.php?personnel#lpersonnel">Liste du personnel</a></li>
+                        <li><a href="gestion.php?personnel#npersonnel">Ajouter un employer</a></li>
                     </ul>
                 </li>
                 <li class="dropdown" id="produit">
                     <a class="dropdown-toggle" href="#">Produit
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="gestion.php?produit#lelement">Liste des produits</a></li>
-                        <li><a href="gestion.php?produit#nelement">Ajouter un produit</a></li>
+                        <li><a href="gestion.php?produit#lproduit">Liste des produits</a></li>
+                        <li><a href="gestion.php?produit#nproduit">Ajouter un produit</a></li>
                     </ul>
                 </li>
                 <li class="dropdown" id="document">
