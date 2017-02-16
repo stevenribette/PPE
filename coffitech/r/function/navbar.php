@@ -58,9 +58,9 @@ function navbar(){
                 </li>
                 <li class="dropdown" id="document">
                     <a class="dropdown-toggle" href="#">Document
-                        <span class="caret"></span></a>
+                        <span class="caret"></span>
+                    </a>
                     <ul class="dropdown-menu">
-                        <li><a href="gestion.php?devis">Devis</a></li>
                         <li><a href="gestion.php?commande">Commande</a></li>
                         <li><a href="gestion.php?facture">Facture</a></li>
                         <li><a href="gestion.php?caisse">Caisse</a></li>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/style.css" />
     <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -42,17 +42,20 @@
     else if(isset($_GET['produit'])){
         produit();
     }
-    else if(isset($_GET['devis'])){
-        document("devis");
-    }
     else if(isset($_GET['commande'])){
         document("commande");
+    }
+    else if(isset($_GET['commandec'])){
+        document("commandec");
+    }
+    else if(isset($_GET['commandef'])){
+        document("commandef");
     }
     else if(isset($_GET['facture'])){
         document("facture");
     }
     else if(isset($_GET['caisse'])){
-        caisse();
+        document("caisse");
     }
     else{
     ?>
