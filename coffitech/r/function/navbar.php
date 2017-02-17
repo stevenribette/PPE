@@ -91,6 +91,7 @@ function navbar(){
             $('#personnel').addClass('hidden');
             $('#produit').addClass('hidden');
             $("#document .dropdown-toggle").attr("data-toggle", "dropdown");
+            $("#caisse .dropdown-toggle").attr("data-toggle", "dropdown");
             </script>
             <?php
         }
@@ -103,6 +104,7 @@ function navbar(){
                 $("#fournisseur .dropdown-toggle").attr("data-toggle", "dropdown");
                 $("#produit .dropdown-toggle").attr("data-toggle", "dropdown");
                 $("#document .dropdown-toggle").attr("data-toggle", "dropdown");
+                $("#caisse .dropdown-toggle").attr("data-toggle", "dropdown");
             </script>
             <?php
         }
@@ -113,6 +115,7 @@ function navbar(){
                 $('#fournisseur').addClass('hidden');
                 $('#produit').addClass('hidden');
                 $('#document').addClass('hidden');
+                $('#caisse').addClass('hidden');
                 $("#client .dropdown-toggle").attr("data-toggle", "dropdown");
                 $("#personnel .dropdown-toggle").attr("data-toggle", "dropdown");
             </script>
@@ -127,6 +130,7 @@ function navbar(){
                 $("#document .dropdown-toggle").attr("data-toggle", "dropdown");
                 $("#client .dropdown-toggle").attr("data-toggle", "dropdown");
                 $("#personnel .dropdown-toggle").attr("data-toggle", "dropdown");
+                $("#caisse .dropdown-toggle").attr("data-toggle", "dropdown");
             </script>
             <?php
         }

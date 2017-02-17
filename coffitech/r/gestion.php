@@ -54,8 +54,14 @@
     else if(isset($_GET['facture'])){
         document("facture");
     }
+    else if(isset($_GET['facturec'])){
+        document("facturec");
+    }
+    else if(isset($_GET['facturef'])){
+        document("facturef");
+    }
     else if(isset($_GET['caisse'])){
-        document("caisse");
+        caisse();
     }
     else{
     ?>

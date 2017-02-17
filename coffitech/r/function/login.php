@@ -74,7 +74,7 @@ function login()
 
                     print('<form method="POST" class="form-inline" >');
                     print('<input type="hidden" name="logout" value="true" />');
-                    print('<button type="submit" value="Déconnecter" class="glyphicon glyphicon-log-out btn btn-primary btn-block"></button>');
+                    print('<button type="submit" value="Déconnecter" class="glyphicon glyphicon-log-out btn btn-primary"></button>');
                     print('</form>');
                     print('</div>');
                 }
