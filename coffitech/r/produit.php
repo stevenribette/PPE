@@ -188,7 +188,7 @@ class produit{
         print('
         <form method="post" class="form-inline">
             <fieldset>
-                <legend>Ajouter une catégorie</legend>
+                <legend>Ajouter une categorie</legend>
                 <div class="form-group">
                     <input type="text" name="post_catlibelle" class="form-control" placeholder="Entrer le libelle">
                 </div>
