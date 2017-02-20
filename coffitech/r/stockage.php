@@ -99,8 +99,8 @@ class stockage
                     print('<tr><td>' . $Row[2] . '</td>
                     <td>
                         <label class="mb-2 mr-sm-2 mb-sm-0 " id="' . $Row[1] . '">' . $Row[1] . ' </label>
-                        <button class="btn btn-default btn-sm pull-right" type="button" data-target="#' . $Row[0] . '" data-toggle="collapse" aria-expanded="false" aria-controls="MonCollapse"><span class="glyphicon glyphicon-edit"></span></button>
-                        <section id="' . $Row[0] . '" class="collapse" >
+                        <button class="btn btn-default btn-sm pull-right" type="button" data-target="#ms'.$this->base[$i].'' . $Row[0] . '" data-toggle="collapse" aria-expanded="false" aria-controls="MonCollapse"><span class="glyphicon glyphicon-edit"></span></button>
+                        <section id="ms'.$this->base[$i].'' . $Row[0] . '" class="collapse" >
                         <form method="post" id="' . $this->base[$i] . 'element" class="form-inline">
                         ' . $modif . '<button name="' . $this->base[$i] . 'element" type="submit" class="btn btn-info">Modifier</button>');
                         if (isset($_POST['' . $this->base[$i] . 'element'])) {

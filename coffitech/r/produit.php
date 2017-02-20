@@ -64,10 +64,15 @@ class produit{
                 $res = mysqli_query($db, 'SELECT cat_libelle FROM categorie WHERE cat_id = "'.$Row[4].'" ');
                 $ver = mysqli_fetch_array($res);
                 print('
+                <script>$(function(){
+                    $(\'select[value]\').each(function(){
+                        $(this).val(this.getAttribute("value"));
+                    });
+                });</script>
                 <td>' . $ver[0] . '
                 <section class="pdt' . $Row[0] . ' collapse" >   
                 <div class="form-group">
-                    <select class="form-control" name="pdtcat">');
+                    <select class="form-control" name="pdtcat" value="' . $ver[0] . '">');
                     while ($elem = mysqli_fetch_array($listres)) {
                         print('<option>' . $elem[0] . '</option>');
                     }

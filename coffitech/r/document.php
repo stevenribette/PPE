@@ -199,10 +199,11 @@ class commande {
                     $res = mysqli_query($db, 'SELECT setup_code FROM setup WHERE setup_id = "' . $Row[1] . '" ');
                     $ver = mysqli_fetch_array($res);
                     print('<td>' . $ver[0] . '');
-                    $listres = mysqli_query($db, 'SELECT setup_code FROM setup WHERE etat = "disponible"');
+                    $listres = mysqli_query($db, 'SELECT setup_code FROM setup WHERE etat = "disponible" && not exists (SELECT setup_id FROM ligne_commande_'.$type.' where setup.setup_id = ligne_commande_'.$type.'.setup_id && comc_id = "' . $_GET['licom' . $min . ''] . '") ');
                     print('<section class="lic' . $Row[0] . ' collapse" >   
                             <div class="form-group">
                                 <select class="form-control" value="' . $ver[0] . '" name="l'.$base.'setup">');
+                    print('<option>' . $ver[0] . '</option>');
                     while ($elem = mysqli_fetch_array($listres)) {
                         print('<option>' . $elem[0] . '</option>');
                     }
