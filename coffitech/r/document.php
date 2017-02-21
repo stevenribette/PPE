@@ -166,9 +166,48 @@ class commande {
             print('<meta http-equiv="refresh" content="0;URL=gestion.php?commande' . $min . '">');
         }
         if (isset($_GET['validcom' . $min . ''])) {
-            $sql = 'UPDATE commande_'.$type.' SET '.$base.'_val = "Y"  WHERE '.$base.'_id=' . $_GET['suppcom' . $min . ''];
-            mysqli_query($db, $sql);
-            print('<meta http-equiv="refresh" content="0;URL=gestion.php?commande' . $min . '">');
+            $req = 'SELECT l'.$base.'_id FROM ligne_commande_'.$type.'  WHERE '.$base.'_id =' . $_GET['validcom' . $min . ''];
+            $res = mysqli_query($db, $req);
+            $donnee = mysqli_fetch_array($res);
+            //libération des ressources
+            mysqli_free_result($res);
+            if ($donnee['l'.$base.'_id'] != '') {
+                if ($type == "fournisseur") {
+                    $result = mysqli_query($db, 'SELECT l'.$base.'_libelle, l'.$base.'_qte, pu_ht FROM ligne_commande_'.$type.' WHERE '.$base.'_id = ' . $_GET['validcom' . $min . '']);
+                    //lecture des resultats
+                    while ($Row = mysqli_fetch_array($result)) {
+                        $req = 'SELECT pdt_libelle FROM produit  WHERE pdt_libelle = "' . $Row[0].'" ';
+                        $res = mysqli_query($db, $req);
+                        $donnee = mysqli_fetch_array($res);
+                        //libération des ressources
+                        mysqli_free_result($res);
+                        if ($donnee['pdt_libelle'] == '') {
+                            $sql = 'INSERT INTO produit
+                                    SET pdt_libelle = "' . $Row[0].'", pdt_qte = "' . $Row[1].'",pdt_pu_ht = "' . $Row[2].'"';
+                            mysqli_query($db, $sql);
+                        }else{
+                            $sql = 'SELECT pdt_qte FROM produit  WHERE pdt_libelle = "' . $Row[0].'" ';
+                            $res = mysqli_query($db, $sql);
+                            $donnee2 = mysqli_fetch_array($res);
+                            $donnee2 = $donnee2[0] + $Row[1];
+                            $sql = 'UPDATE produit
+                                SET pdt_qte = "' . $donnee2 . '"
+                                WHERE pdt_libelle = "' . $Row[0].'"';
+                            mysqli_query($db, $sql);
+                        }
+                    }
+                    $sql = 'UPDATE commande_' . $type . ' SET ' . $base . '_val = "Y"  WHERE ' . $base . '_id=' . $_GET['validcom' . $min . ''];
+                    mysqli_query($db, $sql);
+                } else if ($type == "client") {
+
+                }
+                print('<meta http-equiv="refresh" content="0;URL=gestion.php?commande' . $min . '">');
+            }else{
+                print('
+                    <div class="alert alert-danger">
+                        <strong>Danger!</strong> Vous n\'avez aucune ligne à votre commande
+                    </div > ');
+            }
         }
         //libération des ressources
         mysqli_free_result($result);
